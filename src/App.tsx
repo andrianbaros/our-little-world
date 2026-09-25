@@ -7,17 +7,19 @@ import { CharacterModal } from './components/CharacterModal';
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
 import { CHARACTERS_DATA } from './data/characters';
-import type { CharacterPersonality } from './types/character';
+import type { CharacterPersonality, Language } from './types/character';
+import { UI_TRANSLATIONS } from './translations/ui';
 import { Sparkles } from 'lucide-react';
 
 export function App() {
   const [isNight, setIsNight] = useState(false);
+  const [lang, setLang] = useState<Language>('id');
   const [selectedCharacter, setSelectedCharacter] = useState<CharacterPersonality | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [highlightedId, setHighlightedId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Initialize theme from localStorage
+  // Initialize theme & language from localStorage
   useEffect(() => {
     const savedTheme = localStorage.getItem('olw_theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -29,13 +31,24 @@ export function App() {
       document.documentElement.classList.remove('dark');
     }
 
-    // Cute brief initial waking-up animation
+    const savedLang = localStorage.getItem('olw_lang') as Language;
+    if (savedLang && (savedLang === 'id' || savedLang === 'en' || savedLang === 'km')) {
+      setLang(savedLang);
+    }
+
+    // Cute initial waking-up animation
     const loadTimer = setTimeout(() => {
       setIsLoading(false);
     }, 1100);
 
     return () => clearTimeout(loadTimer);
   }, []);
+
+  // Language switcher
+  const handleSelectLanguage = (newLang: Language) => {
+    setLang(newLang);
+    localStorage.setItem('olw_lang', newLang);
+  };
 
   // Toggle Day / Night mode
   const handleToggleTheme = () => {
@@ -84,20 +97,22 @@ export function App() {
     }, 800);
   };
 
+  const ui = UI_TRANSLATIONS[lang];
+
   return (
     <div className="min-h-screen flex flex-col font-sans transition-colors duration-700 bg-[#fcfaf7] dark:bg-[#0c101c] text-[#2c3242] dark:text-[#f0f3fa]">
       {/* Initial Cute Waking-Up Screen */}
       {isLoading && (
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#ffeef2] dark:bg-[#0e1326] transition-opacity duration-500">
           <div className="relative flex flex-col items-center animate-bounce-cute">
-            <div className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-pink-500 via-purple-500 to-amber-400 flex items-center justify-center shadow-xl mb-4">
+            <div className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-pink-500 via-purple-500 to-amber-400 flex items-center justify-center shadow-xl mb-4 border-b-4 border-pink-700">
               <Sparkles className="w-8 h-8 text-white animate-spin" />
             </div>
             <h2 className="text-xl font-black text-gray-900 dark:text-white tracking-wider">
-              OUR LITTLE WORLD
+              {ui.brandTitle}
             </h2>
-            <p className="text-xs font-semibold text-pink-600 dark:text-pink-400 mt-1">
-              Waking up 12 little friends...
+            <p className="text-xs font-bold text-pink-600 dark:text-pink-400 mt-1">
+              {ui.loading}
             </p>
           </div>
         </div>
@@ -106,7 +121,9 @@ export function App() {
       {/* Sticky Navigation */}
       <Navbar
         isNight={isNight}
+        lang={lang}
         onToggleTheme={handleToggleTheme}
+        onSelectLanguage={handleSelectLanguage}
         onSurpriseMe={handleSurpriseMe}
       />
 
@@ -115,6 +132,7 @@ export function App() {
         {/* 1. Hero Section */}
         <HeroSection
           characters={CHARACTERS_DATA}
+          lang={lang}
           onExploreClick={handleExploreClick}
           onOpenProfile={handleOpenProfile}
           isNight={isNight}
@@ -123,6 +141,7 @@ export function App() {
         {/* 2. World Scene Section */}
         <WorldScene
           characters={CHARACTERS_DATA}
+          lang={lang}
           onOpenProfile={handleOpenProfile}
           isNight={isNight}
           highlightedId={highlightedId}
@@ -131,6 +150,7 @@ export function App() {
         {/* 3. Collectible Album / Character Cards */}
         <CharacterCollection
           characters={CHARACTERS_DATA}
+          lang={lang}
           onOpenProfile={handleOpenProfile}
           onFocusInWorld={handleFocusInWorld}
           isNight={isNight}
@@ -139,13 +159,14 @@ export function App() {
         {/* 4. About & Story Section */}
         <AboutSection
           characters={CHARACTERS_DATA}
+          lang={lang}
           onOpenProfile={handleOpenProfile}
-          isNight={isNight}
         />
       </main>
 
       {/* Footer */}
       <Footer
+        lang={lang}
         onBackToTop={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         isNight={isNight}
       />
@@ -154,6 +175,7 @@ export function App() {
       <CharacterModal
         character={selectedCharacter}
         allCharacters={CHARACTERS_DATA}
+        lang={lang}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         onSelectCharacter={(char) => setSelectedCharacter(char)}

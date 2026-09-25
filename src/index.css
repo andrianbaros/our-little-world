@@ -2,7 +2,7 @@
 
 @layer base {
   :root {
-    --font-rounded: 'Fredoka', 'Quicksand', 'Nunito', system-ui, sans-serif;
+    --font-rounded: 'Fredoka', 'Kantumruy Pro', 'Noto Sans Khmer', 'Quicksand', 'Nunito', system-ui, sans-serif;
   }
 
   body {

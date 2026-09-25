@@ -1,14 +1,30 @@
+export type Language = 'id' | 'en' | 'km';
+
+export interface LocalizedString {
+  id: string;
+  en: string;
+  km: string;
+}
+
 export interface CharacterPersonality {
   id: string;
   number: string; // e.g. "01", "02"
-  name: string;
-  tagline: string;
-  personality: string[];
-  quote: string;
-  favorite: string;
-  funFact: string;
-  speechText: string;
-  idleSpeech: string[];
+  name: LocalizedString;
+  tagline: LocalizedString;
+  personality: {
+    id: string[];
+    en: string[];
+    km: string[];
+  };
+  quote: LocalizedString;
+  favorite: LocalizedString;
+  funFact: LocalizedString;
+  speechText: LocalizedString;
+  idleSpeech: {
+    id: string[];
+    en: string[];
+    km: string[];
+  };
   themeColor: {
     primary: string;
     secondary: string;
@@ -26,8 +42,8 @@ export interface CharacterPersonality {
     scale?: number;
     zIndex?: number;
     facing?: 'left' | 'right';
-    spotDescription: string;
+    spotDescription: LocalizedString;
   };
   soundType: 'pop' | 'boing' | 'chime' | 'giggle' | 'yawn' | 'wink' | 'fanfare' | 'chirp';
-  specialReaction: string; // description of what happens on rare click
+  specialReaction: LocalizedString;
 }
