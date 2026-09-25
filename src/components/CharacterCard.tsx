@@ -76,7 +76,7 @@ export const CharacterCard = ({
           <CharacterSprite
             id={character.id}
             imagePath={character.imagePath}
-            isSleeping={character.id === 'cici'}
+            isSleeping={character.id === 'cici' || character.id === 'momo'}
             isHovered={isHovered}
             className="w-full h-full"
           />

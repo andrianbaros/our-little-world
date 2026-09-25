@@ -261,59 +261,78 @@ export const CharacterVector = ({
         <svg viewBox="0 0 160 180" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <radialGradient id="momoBody" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stopColor="#E9D8FD" />
-              <stop offset="100%" stopColor="#9F7AEA" />
+              <stop offset="0%" stopColor="#FFF0F3" />
+              <stop offset="45%" stopColor="#FFA3B5" />
+              <stop offset="100%" stopColor="#FF6B8B" />
+            </radialGradient>
+            <radialGradient id="momoCap" cx="40%" cy="30%" r="70%">
+              <stop offset="0%" stopColor="#FFCCD5" />
+              <stop offset="100%" stopColor="#FF5E7E" />
             </radialGradient>
           </defs>
-          <ellipse cx="80" cy="165" rx="46" ry="10" fill="rgba(0,0,0,0.12)" />
-          {/* Round Cheerful Ears */}
-          <circle cx="48" cy="62" r="17" fill="#9F7AEA" />
-          <circle cx="48" cy="62" r="10" fill="#FAF5FF" />
-          <circle cx="112" cy="62" r="17" fill="#9F7AEA" />
-          <circle cx="112" cy="62" r="10" fill="#FAF5FF" />
+          <ellipse cx="80" cy="165" rx="45" ry="10" fill="rgba(0,0,0,0.12)" />
 
-          {/* Sweet Pink Heart Ribbon on Ear */}
-          <g transform="translate(104, 50)">
+          {/* Cozy Pink Nightcap */}
+          <path d="M52 65 C45 22 102 12 112 48 Z" fill="url(#momoCap)" />
+          <path d="M112 48 C128 44 142 58 138 74" stroke="#FF5E7E" strokeWidth="6" strokeLinecap="round" />
+          <circle cx="139" cy="77" r="7.5" fill="#FFF0F3" stroke="#FFA3B5" strokeWidth="1" />
+          {/* Strawberry accent dot */}
+          <circle cx="139" cy="77" r="2.5" fill="#FF3366" />
+
+          {/* Fluffy Rounded Pink Ears */}
+          <circle cx="48" cy="66" r="16" fill="#FF6B8B" />
+          <circle cx="48" cy="66" r="9" fill="#FFF0F3" />
+          <circle cx="112" cy="66" r="16" fill="#FF6B8B" />
+          <circle cx="112" cy="66" r="9" fill="#FFF0F3" />
+
+          {/* Soft Marshmallow Pink Body */}
+          <circle cx="80" cy="106" r="53" fill="url(#momoBody)" />
+          <ellipse cx="80" cy="120" rx="34" ry="26" fill="#FFF0F3" opacity="0.95" />
+
+          {/* Sleepy Closed Curved Eyelids (Twin match) */}
+          <path d="M58 97 Q66 103 74 97" stroke="#9E1C38" strokeWidth="2.8" strokeLinecap="round" />
+          <path d="M86 97 Q94 103 102 97" stroke="#9E1C38" strokeWidth="2.8" strokeLinecap="round" />
+
+          {/* Cute Yawn Mouth */}
+          <ellipse cx="80" cy="106" rx="3.5" ry="4.5" fill="#9E1C38" />
+
+          {/* Rosy Strawberry Cheeks */}
+          <ellipse cx="52" cy="105" rx="8" ry="5" fill="#FF85A1" opacity="0.75" />
+          <ellipse cx="108" cy="105" rx="8" ry="5" fill="#FF85A1" opacity="0.75" />
+
+          {/* Hugging Strawberry Marshmallow Bolster / Pillow */}
+          <g transform="translate(62, 118)">
+            <ellipse cx="18" cy="12" rx="20" ry="12" fill="#FFF5F7" stroke="#FFCCD5" strokeWidth="1.5" />
+            <ellipse cx="10" cy="10" rx="10" ry="8" fill="#FFF0F3" />
+            <ellipse cx="26" cy="10" rx="10" ry="8" fill="#FFF0F3" />
+            {/* Pink heart badge on pillow */}
             <path
-              d="M10 3.2 C10 1.4 8.5 0 6.7 0 C5.3 0 4.2 0.8 3.7 2 C3.2 0.8 2.1 0 0.7 0 C-1.1 0 -2.6 1.4 -2.6 3.2 C-2.6 5.5 0 8.5 3.7 11 C7.4 8.5 10 5.5 10 3.2 Z"
-              fill="#FF5E7E"
+              d="M18 10 C18 8 16.5 6.5 15 6.5 C13.5 6.5 12.5 7.5 12 8.5 C11.5 7.5 10.5 6.5 9 6.5 C7.5 6.5 6 8 6 10 C6 12 9 14.5 12 16 C15 14.5 18 12 18 10 Z"
+              fill="#FF3366"
+              transform="scale(0.7) translate(10, 3)"
             />
           </g>
 
-          {/* Fluffy Marshmallow Body */}
-          <circle cx="80" cy="106" r="54" fill="url(#momoBody)" />
-          <ellipse cx="80" cy="120" rx="35" ry="26" fill="#FAF5FF" opacity="0.9" />
-
-          {/* Cheerful Happy Big Eyes */}
-          <circle cx="66" cy="94" r="7.5" fill="#44337A" />
-          <circle cx="64" cy="91" r="3" fill="#FFFFFF" />
-          <circle cx="69" cy="96" r="1.5" fill="#FFFFFF" />
-
-          <circle cx="94" cy="94" r="7.5" fill="#44337A" />
-          <circle cx="92" cy="91" r="3" fill="#FFFFFF" />
-          <circle cx="97" cy="96" r="1.5" fill="#FFFFFF" />
-
-          {/* Cheerful Joyful Smile */}
-          <path d="M72 105 Q80 119 88 105 Z" fill="#6B46C1" />
-          <path d="M75 111 Q80 117 85 111" fill="#FF85A1" />
-
-          {/* Rosy Pink Cheeks */}
-          <ellipse cx="54" cy="104" rx="7" ry="4" fill="#FF5E7E" opacity="0.55" />
-          <ellipse cx="106" cy="104" rx="7" ry="4" fill="#FF5E7E" opacity="0.55" />
-
           {/* Pink Heart Chest Badge */}
-          <g transform="translate(74, 126)">
+          <g transform="translate(74, 138)">
             <path
               d="M6 2.5 C6 1 5 0 3.8 0 C2.8 0 2 0.7 1.6 1.6 C1.2 0.7 0.4 0 -0.6 0 C-1.8 0 -2.8 1 -2.8 2.5 C-2.8 4.3 -0.5 6.6 1.6 8.5 C3.7 6.6 6 4.3 6 2.5 Z"
-              fill="#FF5E7E"
+              fill="#FF3366"
               stroke="#D53F8C"
               strokeWidth="0.8"
             />
           </g>
 
-          {/* Feet */}
-          <ellipse cx="62" cy="155" rx="13" ry="8" fill="#805AD5" />
-          <ellipse cx="98" cy="155" rx="13" ry="8" fill="#805AD5" />
+          {/* Floating Pink zZz */}
+          <g className="animate-pulse" opacity="0.85">
+            <text x="112" y="38" fill="#FF6B8B" fontSize="13" fontWeight="bold">z</text>
+            <text x="123" y="26" fill="#FF85A1" fontSize="17" fontWeight="bold">Z</text>
+            <text x="136" y="14" fill="#FFA3B5" fontSize="21" fontWeight="bold">Z</text>
+          </g>
+
+          {/* Little Pink Feet */}
+          <ellipse cx="62" cy="155" rx="13" ry="8" fill="#E53E65" />
+          <ellipse cx="98" cy="155" rx="13" ry="8" fill="#E53E65" />
         </svg>
       );
 
@@ -376,61 +395,78 @@ export const CharacterVector = ({
         <svg viewBox="0 0 160 180" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <radialGradient id="ciciBody" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stopColor="#FED7E2" />
-              <stop offset="100%" stopColor="#ED64A6" />
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="60%" stopColor="#F7FAFC" />
+              <stop offset="100%" stopColor="#E2E8F0" />
+            </radialGradient>
+            <radialGradient id="ciciCap" cx="40%" cy="30%" r="70%">
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="100%" stopColor="#E2E8F0" />
             </radialGradient>
           </defs>
           <ellipse cx="80" cy="165" rx="45" ry="10" fill="rgba(0,0,0,0.12)" />
 
-          {/* Cozy Nightcap */}
-          <path d="M52 65 C45 25 100 15 110 50 Z" fill="#FBB6CE" />
-          <path d="M110 50 C125 45 138 60 135 75" stroke="#FBB6CE" strokeWidth="6" strokeLinecap="round" />
-          <circle cx="136" cy="78" r="7" fill="#FFF5F7" />
+          {/* Cozy White Twin Nightcap */}
+          <path d="M52 65 C45 22 102 12 112 48 Z" fill="url(#ciciCap)" stroke="#CBD5E0" strokeWidth="1" />
+          <path d="M112 48 C128 44 142 58 138 74" stroke="#CBD5E0" strokeWidth="6" strokeLinecap="round" />
+          <circle cx="139" cy="77" r="7.5" fill="#FFFFFF" stroke="#CBD5E0" strokeWidth="1" />
+          {/* Pastel Silver/Pearl dot accent */}
+          <circle cx="139" cy="77" r="2.5" fill="#A0AEC0" />
 
-          {/* Fluffy Rounded Ears */}
-          <circle cx="48" cy="66" r="16" fill="#ED64A6" />
-          <circle cx="48" cy="66" r="9" fill="#FFF5F7" />
-          <circle cx="112" cy="66" r="16" fill="#ED64A6" />
-          <circle cx="112" cy="66" r="9" fill="#FFF5F7" />
+          {/* Fluffy Rounded Snow-White Ears */}
+          <circle cx="48" cy="66" r="16" fill="#EDF2F7" stroke="#CBD5E0" strokeWidth="1" />
+          <circle cx="48" cy="66" r="9" fill="#FFFFFF" />
+          <circle cx="112" cy="66" r="16" fill="#EDF2F7" stroke="#CBD5E0" strokeWidth="1" />
+          <circle cx="112" cy="66" r="9" fill="#FFFFFF" />
 
-          {/* Soft Body */}
-          <circle cx="80" cy="106" r="53" fill="url(#ciciBody)" />
-          <ellipse cx="80" cy="120" rx="34" ry="26" fill="#FFF5F7" opacity="0.9" />
+          {/* Soft Pure White Body */}
+          <circle cx="80" cy="106" r="53" fill="url(#ciciBody)" stroke="#E2E8F0" strokeWidth="1.2" />
+          <ellipse cx="80" cy="120" rx="34" ry="26" fill="#FFFFFF" opacity="0.95" />
 
-          {/* Sleepy Closed Curved Eyelids */}
-          <path d="M58 97 Q66 103 74 97" stroke="#702459" strokeWidth="2.8" strokeLinecap="round" />
-          <path d="M86 97 Q94 103 102 97" stroke="#702459" strokeWidth="2.8" strokeLinecap="round" />
+          {/* Sleepy Closed Curved Eyelids (Twin match) */}
+          <path d="M58 97 Q66 103 74 97" stroke="#4A5568" strokeWidth="2.8" strokeLinecap="round" />
+          <path d="M86 97 Q94 103 102 97" stroke="#4A5568" strokeWidth="2.8" strokeLinecap="round" />
 
           {/* Cute Yawn Mouth */}
-          <ellipse cx="80" cy="106" rx="3.5" ry="4.5" fill="#702459" />
+          <ellipse cx="80" cy="106" rx="3.5" ry="4.5" fill="#4A5568" />
 
-          {/* Soft Pink Blush */}
-          <ellipse cx="52" cy="105" rx="8" ry="5" fill="#FBB6CE" />
-          <ellipse cx="108" cy="105" rx="8" ry="5" fill="#FBB6CE" />
+          {/* Soft Pastel Pink Twin Blush */}
+          <ellipse cx="52" cy="105" rx="8" ry="5" fill="#FED7E2" opacity="0.8" />
+          <ellipse cx="108" cy="105" rx="8" ry="5" fill="#FED7E2" opacity="0.8" />
 
           {/* Hugging Marshmallow Cloud Pillow */}
           <g transform="translate(62, 118)">
-            <ellipse cx="18" cy="12" rx="20" ry="12" fill="#FFFFFF" stroke="#FED7E2" strokeWidth="1.5" />
+            <ellipse cx="18" cy="12" rx="20" ry="12" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1.5" />
             <ellipse cx="10" cy="10" rx="10" ry="8" fill="#FFFFFF" />
             <ellipse cx="26" cy="10" rx="10" ry="8" fill="#FFFFFF" />
-            {/* Cute pink heart on pillow */}
+            {/* Cute pink heart on white pillow */}
             <path
               d="M18 10 C18 8 16.5 6.5 15 6.5 C13.5 6.5 12.5 7.5 12 8.5 C11.5 7.5 10.5 6.5 9 6.5 C7.5 6.5 6 8 6 10 C6 12 9 14.5 12 16 C15 14.5 18 12 18 10 Z"
-              fill="#FF85A1"
+              fill="#FF6B8B"
               transform="scale(0.7) translate(10, 3)"
             />
           </g>
 
-          {/* Floating Pink zZz */}
-          <g className="animate-pulse" opacity="0.85">
-            <text x="112" y="38" fill="#ED64A6" fontSize="13" fontWeight="bold">z</text>
-            <text x="123" y="26" fill="#F687B3" fontSize="17" fontWeight="bold">Z</text>
-            <text x="136" y="14" fill="#FED7E2" fontSize="21" fontWeight="bold">Z</text>
+          {/* Pink Heart Chest Badge (female character) */}
+          <g transform="translate(74, 138)">
+            <path
+              d="M6 2.5 C6 1 5 0 3.8 0 C2.8 0 2 0.7 1.6 1.6 C1.2 0.7 0.4 0 -0.6 0 C-1.8 0 -2.8 1 -2.8 2.5 C-2.8 4.3 -0.5 6.6 1.6 8.5 C3.7 6.6 6 4.3 6 2.5 Z"
+              fill="#FF5E7E"
+              stroke="#D53F8C"
+              strokeWidth="0.8"
+            />
           </g>
 
-          {/* Little Feet */}
-          <ellipse cx="62" cy="155" rx="13" ry="8" fill="#D53F8C" />
-          <ellipse cx="98" cy="155" rx="13" ry="8" fill="#D53F8C" />
+          {/* Floating Soft Cloud zZz */}
+          <g className="animate-pulse" opacity="0.85">
+            <text x="112" y="38" fill="#718096" fontSize="13" fontWeight="bold">z</text>
+            <text x="123" y="26" fill="#A0AEC0" fontSize="17" fontWeight="bold">Z</text>
+            <text x="136" y="14" fill="#CBD5E0" fontSize="21" fontWeight="bold">Z</text>
+          </g>
+
+          {/* Little Soft Slate Feet */}
+          <ellipse cx="62" cy="155" rx="13" ry="8" fill="#CBD5E0" />
+          <ellipse cx="98" cy="155" rx="13" ry="8" fill="#CBD5E0" />
         </svg>
       );
 

@@ -179,7 +179,7 @@ export const CharacterModal = ({
                     <CharacterSprite
                       id={character.id}
                       imagePath={character.imagePath}
-                      isSleeping={character.id === 'cici' || (isNight && character.id === 'hanhan')}
+                      isSleeping={character.id === 'cici' || character.id === 'momo' || (isNight && character.id === 'hanhan')}
                       isClicked={isBooped}
                       className="w-full h-full"
                     />

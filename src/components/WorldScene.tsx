@@ -283,7 +283,7 @@ export const WorldScene = ({
           const isClicked = clickedCharId === char.id;
           const isHighlighted = highlightedId === char.id;
           const isNearbyReacting = nearbyReactionCharId === char.id;
-          const isSleeping = char.id === 'cici' || (isNight && char.id === 'hanhan');
+          const isSleeping = char.id === 'cici' || char.id === 'momo' || (isNight && char.id === 'hanhan');
 
           let idleClass = 'animate-breathe';
           if (char.idleAnimation === 'bounce') idleClass = 'animate-bounce-cute';
