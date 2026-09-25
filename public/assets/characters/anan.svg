@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="ananBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#A8E6CF" />
+          <stop offset="100%" stopColor="#48BB78" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+      <circle cx="60" cy="74" r="22" fill="#48BB78" />
+      <circle cx="60" cy="74" r="13" fill="#C6F6D5" />
+      <circle cx="140" cy="74" r="22" fill="#48BB78" />
+      <circle cx="140" cy="74" r="13" fill="#C6F6D5" />
+      <path d="M100 62 C94 44 75 48 85 58 C94 65 100 62 100 62 Z" fill="#38A169" />
+      <path d="M100 62 C106 44 125 48 115 58 C106 65 100 62 100 62 Z" fill="#68D391" />
+      <circle cx="100" cy="130" r="66" fill="url(#ananBody)" />
+      <ellipse cx="100" cy="146" rx="42" ry="32" fill="#F0FFF4" opacity="0.9" />
+      <ellipse cx="76" cy="193" rx="17" ry="11" fill="#38A169" />
+      <ellipse cx="124" cy="193" rx="17" ry="11" fill="#38A169" />
+      <path d="M75 120 Q85 112 95 120" stroke="#1C6439" strokeWidth="3.5" strokeLinecap="round" />
+      <path d="M105 120 Q115 112 125 120" stroke="#1C6439" strokeWidth="3.5" strokeLinecap="round" />
+      <ellipse cx="68" cy="130" rx="9" ry="5" fill="#68D391" opacity="0.6" />
+      <ellipse cx="132" cy="130" rx="9" ry="5" fill="#68D391" opacity="0.6" />
+      <ellipse cx="100" cy="126" rx="3.5" ry="2.5" fill="#1C6439" />
+      <path d="M94 132 Q100 137 106 132" stroke="#1C6439" strokeWidth="2.5" strokeLinecap="round" />
+      <g transform="translate(85, 148)">
+        <rect x="0" y="5" width="30" height="22" rx="6" fill="#FFFFFF" stroke="#38A169" strokeWidth="2" />
+        <path d="M30 10 C35 10 35 20 30 20" stroke="#38A169" strokeWidth="2" fill="none" />
+        <path d="M8 0 Q10 -6 8 -11" stroke="#9AE6B4" strokeWidth="2" strokeLinecap="round" />
+        <path d="M15 -3 Q17 -9 15 -14" stroke="#9AE6B4" strokeWidth="2" strokeLinecap="round" />
+      </g>
+    </svg>

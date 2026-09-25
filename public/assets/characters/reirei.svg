@@ -1,0 +1,28 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="reireiBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#D6BCFA" />
+          <stop offset="100%" stopColor="#6B46C1" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="52" ry="12" fill="rgba(0,0,0,0.12)" />
+      <path d="M58 88 C44 36 62 24 78 68 Z" fill="#6B46C1" />
+      <path d="M60 84 C50 46 65 36 74 69 Z" fill="#E9D8FD" />
+      <path d="M142 88 C156 36 138 24 122 68 Z" fill="#6B46C1" />
+      <path d="M140 84 C150 46 135 36 126 69 Z" fill="#E9D8FD" />
+      <path d="M92 59 C97 49 107 49 112 59 C106 55 98 55 92 59 Z" fill="#FEFCBF" />
+      <circle cx="100" cy="128" r="64" fill="url(#reireiBody)" />
+      <ellipse cx="100" cy="144" rx="38" ry="30" fill="#F3E8FF" opacity="0.9" />
+      <ellipse cx="82" cy="116" rx="8" ry="9.5" fill="#2D1B69" />
+      <circle cx="80" cy="111" r="3.4" fill="#FFFFFF" />
+      <ellipse cx="118" cy="116" rx="8" ry="9.5" fill="#2D1B69" />
+      <circle cx="116" cy="111" r="3.4" fill="#FFFFFF" />
+      <circle cx="68" cy="128" r="2" fill="#FEFCBF" />
+      <circle cx="73" cy="131" r="2" fill="#FEFCBF" />
+      <circle cx="132" cy="128" r="2" fill="#FEFCBF" />
+      <circle cx="127" cy="131" r="2" fill="#FEFCBF" />
+      <path d="M96 130 Q100 134 104 130" stroke="#2D1B69" strokeWidth="2.2" strokeLinecap="round" />
+      <polygon points="100,152 108,162 100,172 92,162" fill="#FEFCBF" stroke="#B794F4" strokeWidth="1.2" />
+      <ellipse cx="80" cy="192" rx="15" ry="9" fill="#553C9A" />
+      <ellipse cx="120" cy="192" rx="15" ry="9" fill="#553C9A" />
+    </svg>

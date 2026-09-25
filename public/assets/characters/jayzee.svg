@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="jayzeeBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#D6BCFA" />
+          <stop offset="100%" stopColor="#6B46C1" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+      <ellipse cx="60" cy="76" rx="17" ry="22" fill="#553C9A" transform="rotate(-15 60 76)" />
+      <ellipse cx="140" cy="76" rx="17" ry="22" fill="#553C9A" transform="rotate(15 140 76)" />
+      <!-- Snapback Cap -->
+      <g transform="translate(52, 46)">
+        <path d="M8 40 C8 10 88 10 88 40 Z" fill="#48BB78" />
+        <path d="M0 40 Q48 48 98 38 Q88 53 13 50 Z" fill="#2F855A" />
+        <path d="M48 22 L50.5 28 L57 29.5 L52 33 L53 39.5 L48 36 L43 39.5 L44 33 L39 29.5 L45.5 28 Z" fill="#F6E05E" stroke="#D69E2E" strokeWidth="1" />
+      </g>
+      <circle cx="100" cy="131" r="66" fill="url(#jayzeeBody)" />
+      <ellipse cx="100" cy="148" rx="41" ry="31" fill="#FAF5FF" opacity="0.9" />
+      <circle cx="82" cy="119" r="9.5" fill="#2D1B69" />
+      <circle cx="80" cy="114" r="3.8" fill="#FFFFFF" />
+      <path d="M110 120 Q120 110 130 120" stroke="#2D1B69" strokeWidth="4" strokeLinecap="round" />
+      <ellipse cx="68" cy="131" rx="9" ry="5" fill="#9F7AEA" opacity="0.6" />
+      <ellipse cx="132" cy="131" rx="9" ry="5" fill="#9F7AEA" opacity="0.6" />
+      <path d="M90 131 Q100 144 110 131" stroke="#2D1B69" strokeWidth="3.2" strokeLinecap="round" fill="none" />
+      <circle cx="114" cy="130" r="2" fill="#2D1B69" />
+      <path d="M85 156 Q100 168 115 156" stroke="#ECC94B" strokeWidth="3" fill="none" />
+      <polygon points="100,161 103,166 108,167 104,171 105,176 100,173 95,176 96,171 92,167 97,166" fill="#F6E05E" stroke="#D69E2E" strokeWidth="1" />
+      <ellipse cx="75" cy="194" rx="17" ry="11" fill="#48BB78" />
+      <ellipse cx="125" cy="194" rx="17" ry="11" fill="#48BB78" />
+    </svg>

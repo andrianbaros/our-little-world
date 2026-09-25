@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="zyzyBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#FEEBC8" />
+          <stop offset="100%" stopColor="#DD6B20" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="54" ry="12" fill="rgba(0,0,0,0.12)" />
+      <polygon points="52,86 38,31 75,61" fill="#DD6B20" />
+      <polygon points="55,81 45,42 70,64" fill="#FEEBC8" />
+      <polygon points="148,86 162,31 125,61" fill="#DD6B20" />
+      <polygon points="145,81 155,42 130,64" fill="#FEEBC8" />
+      <polygon points="95,57 105,37 101,52 110,49 98,67" fill="#ECC94B" />
+      <circle cx="100" cy="127" r="65" fill="url(#zyzyBody)" />
+      <ellipse cx="100" cy="144" rx="40" ry="30" fill="#FFFAF0" opacity="0.9" />
+      <circle cx="82" cy="116" r="10" fill="#7B341E" />
+      <circle cx="80" cy="112" r="4" fill="#FFFFFF" />
+      <circle cx="118" cy="116" r="10" fill="#7B341E" />
+      <circle cx="116" cy="112" r="4" fill="#FFFFFF" />
+      <polygon points="62,126 67,121 65,128 70,127 61,135" fill="#ECC94B" />
+      <polygon points="138,126 133,121 135,128 130,127 139,135" fill="#ECC94B" />
+      <path d="M90 128 Q100 145 110 128 Z" fill="#C53030" />
+      <path d="M92 128 L108 128" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" />
+      <ellipse cx="75" cy="192" rx="17" ry="10" fill="#C05621" />
+      <ellipse cx="125" cy="192" rx="17" ry="10" fill="#C05621" />
+    </svg>
