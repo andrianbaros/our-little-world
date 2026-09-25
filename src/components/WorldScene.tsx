@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Compass, PartyPopper } from 'lucide-react';
+import { Compass, PartyPopper, Heart } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { CharacterSprite } from './CharacterSprite';
 import { SpeechBubble } from './SpeechBubble';
@@ -283,7 +283,7 @@ export const WorldScene = ({
           const isClicked = clickedCharId === char.id;
           const isHighlighted = highlightedId === char.id;
           const isNearbyReacting = nearbyReactionCharId === char.id;
-          const isMomoSleeping = char.id === 'momo' || (isNight && char.id === 'hanhan');
+          const isSleeping = char.id === 'cici' || (isNight && char.id === 'hanhan');
 
           let idleClass = 'animate-breathe';
           if (char.idleAnimation === 'bounce') idleClass = 'animate-bounce-cute';
@@ -354,7 +354,7 @@ export const WorldScene = ({
                   <CharacterSprite
                     id={char.id}
                     imagePath={char.imagePath}
-                    isSleeping={isMomoSleeping}
+                    isSleeping={isSleeping}
                     isClicked={isClicked}
                     isHovered={false}
                     className="w-full h-full"
@@ -375,14 +375,17 @@ export const WorldScene = ({
 
                 {/* Hover Name Tag Pill */}
                 <div
-                  className="opacity-0 group-hover:opacity-100 transition-all duration-200 mt-1 px-2.5 py-0.5 rounded-full text-[11px] font-black shadow-md pointer-events-none whitespace-nowrap backdrop-blur-md transform group-hover:translate-y-0 translate-y-1 border-2"
+                  className="opacity-0 group-hover:opacity-100 transition-all duration-200 mt-1 px-2.5 py-0.5 rounded-full text-[11px] font-black shadow-md pointer-events-none whitespace-nowrap backdrop-blur-md transform group-hover:translate-y-0 translate-y-1 border-2 flex items-center gap-1"
                   style={{
                     backgroundColor: char.themeColor.bg,
                     color: char.themeColor.primary,
                     borderColor: char.themeColor.border,
                   }}
                 >
-                  {char.name[lang]}
+                  {char.isFemale && (
+                    <Heart className="w-3 h-3 text-pink-500 fill-pink-500 inline-block" />
+                  )}
+                  <span>{char.name[lang]}</span>
                 </div>
               </motion.div>
             </div>

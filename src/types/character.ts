@@ -9,6 +9,7 @@ export interface LocalizedString {
 export interface CharacterPersonality {
   id: string;
   number: string; // e.g. "01", "02"
+  isFemale?: boolean;
   name: LocalizedString;
   tagline: LocalizedString;
   personality: {
@@ -44,6 +45,6 @@ export interface CharacterPersonality {
     facing?: 'left' | 'right';
     spotDescription: LocalizedString;
   };
-  soundType: 'pop' | 'boing' | 'chime' | 'giggle' | 'yawn' | 'wink' | 'fanfare' | 'chirp';
+  soundType: 'pop' | 'boing' | 'chime' | 'giggle' | 'yawn' | 'wink' | 'fanfare' | 'chirp' | 'deep';
   specialReaction: LocalizedString;
 }

@@ -260,6 +260,35 @@ class SoundManager {
     } catch {}
   }
 
+  // 9. Smooth deep voice / baritone resonance for Zero
+  public playDeepVoice() {
+    if (this.isMuted) return;
+    try {
+      this.initContext();
+      if (!this.ctx) return;
+
+      const notes = [130.81, 164.81, 196.0]; // C3, E3, G3 - warm low resonant baritone chord
+      notes.forEach((freq, idx) => {
+        const osc = this.ctx!.createOscillator();
+        const gain = this.ctx!.createGain();
+        const now = this.ctx!.currentTime + idx * 0.04;
+
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, now);
+        osc.frequency.exponentialRampToValueAtTime(freq * 0.88, now + 0.35);
+
+        gain.gain.setValueAtTime(0.26, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+
+        osc.connect(gain);
+        gain.connect(this.ctx!.destination);
+
+        osc.start(now);
+        osc.stop(now + 0.45);
+      });
+    } catch {}
+  }
+
   public playBySoundType(type: string) {
     switch (type) {
       case 'boing': this.playBoing(); break;
@@ -268,6 +297,7 @@ class SoundManager {
       case 'yawn': this.playYawn(); break;
       case 'wink': this.playWink(); break;
       case 'fanfare': this.playFanfare(); break;
+      case 'deep': this.playDeepVoice(); break;
       case 'pop':
       default:
         this.playPop();

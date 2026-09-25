@@ -179,7 +179,7 @@ export const CharacterModal = ({
                     <CharacterSprite
                       id={character.id}
                       imagePath={character.imagePath}
-                      isSleeping={character.id === 'momo' || (isNight && character.id === 'hanhan')}
+                      isSleeping={character.id === 'cici' || (isNight && character.id === 'hanhan')}
                       isClicked={isBooped}
                       className="w-full h-full"
                     />
@@ -218,8 +218,13 @@ export const CharacterModal = ({
                   </span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-gray-900 dark:text-white mb-1">
-                  {character.name[lang]}
+                <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-gray-900 dark:text-white mb-1 flex items-center gap-2">
+                  <span>{character.name[lang]}</span>
+                  {character.isFemale && (
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-black bg-pink-100 dark:bg-pink-950/70 text-pink-600 dark:text-pink-300 border border-pink-200 dark:border-pink-800 shadow-xs">
+                      <Heart className="w-3.5 h-3.5 text-pink-500 fill-pink-500 animate-pulse" />
+                    </span>
+                  )}
                 </h2>
                 <p className="text-sm font-semibold text-gray-600 dark:text-gray-300 italic mb-4">
                   "{character.tagline[lang]}"

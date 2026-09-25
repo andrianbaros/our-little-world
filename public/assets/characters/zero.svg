@@ -1,0 +1,49 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="zeroBody" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stopColor="#4A5568" />
+      <stop offset="100%" stopColor="#1A202C" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="100" cy="205" rx="56" ry="12" fill="rgba(0,0,0,0.14)" />
+
+  {/* Sleek Dark Hair / Cool Bangs */}
+  <path d="M60 80 C60 38 140 38 140 80 C140 94 132 102 127 92 C120 82 112 97 105 87 C98 99 87 85 77 95 C70 102 60 95 60 80 Z" fill="#171923" />
+  <path d="M90 72 Q100 90 108 77 Q98 85 90 72 Z" fill="#2D3748" />
+
+  {/* Main Body */}
+  <circle cx="100" cy="132" r="66" fill="url(#zeroBody)" />
+
+  {/* High-Collar Dark Overcoat / Turtleneck */}
+  <path d="M65 143 Q100 160 135 143 L142 193 L58 193 Z" fill="#1A202C" />
+  <path d="M75 137 Q100 150 125 137 Q100 157 75 137 Z" fill="#2D3748" stroke="#4A5568" strokeWidth="2" />
+
+  {/* Calm, Handsome Baritone Eyes */}
+  <g>
+    <ellipse cx="82" cy="117" rx="8" ry="7" fill="#E2E8F0" />
+    <circle cx="83" cy="117" r="5.5" fill="#0D1117" />
+    <circle cx="84" cy="115" r="2" fill="#F6AD55" />
+    <path d="M72 110 Q82 105 92 110" stroke="#0D1117" strokeWidth="2.8" strokeLinecap="round" />
+
+    <ellipse cx="118" cy="117" rx="8" ry="7" fill="#E2E8F0" />
+    <circle cx="117" cy="117" r="5.5" fill="#0D1117" />
+    <circle cx="116" cy="115" r="2" fill="#F6AD55" />
+    <path d="M108 110 Q118 105 128 110" stroke="#0D1117" strokeWidth="2.8" strokeLinecap="round" />
+  </g>
+
+  {/* Gentle, subtle calm smile */}
+  <path d="M94 132 Q100 137 106 132" stroke="#E2E8F0" strokeWidth="2.5" strokeLinecap="round" />
+
+  {/* Steaming Mug of Dark Roast Espresso with Resonance steam */}
+  <g transform="translate(85, 156)">
+    <rect x="5" y="7" width="20" height="18" rx="4" fill="#2D3748" stroke="#718096" strokeWidth="1.5" />
+    <path d="M25 11 C30 11 30 20 25 20" stroke="#718096" strokeWidth="2" fill="none" />
+    {/* Gentle steam curls */}
+    <path d="M11 5 Q14 1 11 -3" stroke="#CBD5E0" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.75" />
+    <path d="M19 5 Q22 1 19 -3" stroke="#CBD5E0" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.75" />
+  </g>
+
+  {/* Boots */}
+  <ellipse cx="78" cy="195" rx="16" ry="10" fill="#171923" />
+  <ellipse cx="122" cy="195" rx="16" ry="10" fill="#171923" />
+</svg>

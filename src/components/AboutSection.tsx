@@ -22,11 +22,12 @@ export const AboutSection = ({
   // Map mood keys to character IDs
   const moodCharacterMap: Record<string, string> = {
     energetic: 'zyzy',
-    sleepy: 'momo',
+    sleepy: 'cici',
     tea: 'anan',
     adventure: 'riri',
-    cool: 'jayzee',
-    caring: 'cici',
+    cool: 'jeo',
+    caring: 'momo',
+    deep: 'zero',
   };
 
   const handleMoodSelect = (moodKey: string) => {

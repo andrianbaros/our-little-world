@@ -266,41 +266,49 @@ export const CharacterVector = ({
             </radialGradient>
           </defs>
           <ellipse cx="80" cy="165" rx="46" ry="10" fill="rgba(0,0,0,0.12)" />
-          {/* Nightcap */}
-          <path d="M52 65 C45 25 100 15 110 50 Z" fill="#B794F4" />
-          <path d="M110 50 C125 45 138 60 135 75" stroke="#B794F4" strokeWidth="6" strokeLinecap="round" />
-          <circle cx="136" cy="78" r="7" fill="#FEFCBF" />
+          {/* Round Cheerful Ears */}
+          <circle cx="48" cy="62" r="17" fill="#9F7AEA" />
+          <circle cx="48" cy="62" r="10" fill="#FAF5FF" />
+          <circle cx="112" cy="62" r="17" fill="#9F7AEA" />
+          <circle cx="112" cy="62" r="10" fill="#FAF5FF" />
+
+          {/* Sweet Pink Heart Ribbon on Ear */}
+          <g transform="translate(104, 50)">
+            <path
+              d="M10 3.2 C10 1.4 8.5 0 6.7 0 C5.3 0 4.2 0.8 3.7 2 C3.2 0.8 2.1 0 0.7 0 C-1.1 0 -2.6 1.4 -2.6 3.2 C-2.6 5.5 0 8.5 3.7 11 C7.4 8.5 10 5.5 10 3.2 Z"
+              fill="#FF5E7E"
+            />
+          </g>
 
           {/* Fluffy Marshmallow Body */}
           <circle cx="80" cy="106" r="54" fill="url(#momoBody)" />
           <ellipse cx="80" cy="120" rx="35" ry="26" fill="#FAF5FF" opacity="0.9" />
 
-          {/* Sleepy closed eyelids */}
-          <path d="M58 97 Q66 103 74 97" stroke="#44337A" strokeWidth="2.8" strokeLinecap="round" />
-          <path d="M86 97 Q94 103 102 97" stroke="#44337A" strokeWidth="2.8" strokeLinecap="round" />
+          {/* Cheerful Happy Big Eyes */}
+          <circle cx="66" cy="94" r="7.5" fill="#44337A" />
+          <circle cx="64" cy="91" r="3" fill="#FFFFFF" />
+          <circle cx="69" cy="96" r="1.5" fill="#FFFFFF" />
 
-          {/* Sleepy little mouth */}
-          <ellipse cx="80" cy="105" rx="3" ry="4" fill="#44337A" />
+          <circle cx="94" cy="94" r="7.5" fill="#44337A" />
+          <circle cx="92" cy="91" r="3" fill="#FFFFFF" />
+          <circle cx="97" cy="96" r="1.5" fill="#FFFFFF" />
 
-          {/* Soft violet blush */}
-          <ellipse cx="52" cy="105" rx="8" ry="5" fill="#D6BCFA" />
-          <ellipse cx="108" cy="105" rx="8" ry="5" fill="#D6BCFA" />
+          {/* Cheerful Joyful Smile */}
+          <path d="M72 105 Q80 119 88 105 Z" fill="#6B46C1" />
+          <path d="M75 111 Q80 117 85 111" fill="#FF85A1" />
 
-          {/* Hugging Star Pillow */}
-          <g transform="translate(68, 118)">
+          {/* Rosy Pink Cheeks */}
+          <ellipse cx="54" cy="104" rx="7" ry="4" fill="#FF5E7E" opacity="0.55" />
+          <ellipse cx="106" cy="104" rx="7" ry="4" fill="#FF5E7E" opacity="0.55" />
+
+          {/* Pink Heart Chest Badge */}
+          <g transform="translate(74, 126)">
             <path
-              d="M12 0 L15 8 L24 9 L17 15 L19 23 L12 18 L5 23 L7 15 L0 9 L9 8 Z"
-              fill="#FEFCBF"
-              stroke="#ECC94B"
-              strokeWidth="1.2"
+              d="M6 2.5 C6 1 5 0 3.8 0 C2.8 0 2 0.7 1.6 1.6 C1.2 0.7 0.4 0 -0.6 0 C-1.8 0 -2.8 1 -2.8 2.5 C-2.8 4.3 -0.5 6.6 1.6 8.5 C3.7 6.6 6 4.3 6 2.5 Z"
+              fill="#FF5E7E"
+              stroke="#D53F8C"
+              strokeWidth="0.8"
             />
-          </g>
-
-          {/* Floating Zzz */}
-          <g className="animate-pulse" opacity="0.85">
-            <text x="110" y="40" fill="#805AD5" fontSize="14" fontWeight="bold">z</text>
-            <text x="122" y="28" fill="#9F7AEA" fontSize="18" fontWeight="bold">Z</text>
-            <text x="136" y="14" fill="#B794F4" fontSize="22" fontWeight="bold">Z</text>
           </g>
 
           {/* Feet */}
@@ -373,53 +381,56 @@ export const CharacterVector = ({
             </radialGradient>
           </defs>
           <ellipse cx="80" cy="165" rx="45" ry="10" fill="rgba(0,0,0,0.12)" />
-          {/* Fluffy ears with flower hairpin */}
-          <circle cx="48" cy="62" r="17" fill="#ED64A6" />
-          <circle cx="48" cy="62" r="10" fill="#FFF5F7" />
-          <circle cx="112" cy="62" r="17" fill="#ED64A6" />
-          <circle cx="112" cy="62" r="10" fill="#FFF5F7" />
 
-          {/* Flower Hairpin on left ear */}
-          <g transform="translate(36, 46)">
-            <circle cx="8" cy="4" r="5" fill="#FFFFFF" />
-            <circle cx="12" cy="8" r="5" fill="#FFFFFF" />
-            <circle cx="8" cy="12" r="5" fill="#FFFFFF" />
-            <circle cx="4" cy="8" r="5" fill="#FFFFFF" />
-            <circle cx="8" cy="8" r="3.5" fill="#F6E05E" />
+          {/* Cozy Nightcap */}
+          <path d="M52 65 C45 25 100 15 110 50 Z" fill="#FBB6CE" />
+          <path d="M110 50 C125 45 138 60 135 75" stroke="#FBB6CE" strokeWidth="6" strokeLinecap="round" />
+          <circle cx="136" cy="78" r="7" fill="#FFF5F7" />
+
+          {/* Fluffy Rounded Ears */}
+          <circle cx="48" cy="66" r="16" fill="#ED64A6" />
+          <circle cx="48" cy="66" r="9" fill="#FFF5F7" />
+          <circle cx="112" cy="66" r="16" fill="#ED64A6" />
+          <circle cx="112" cy="66" r="9" fill="#FFF5F7" />
+
+          {/* Soft Body */}
+          <circle cx="80" cy="106" r="53" fill="url(#ciciBody)" />
+          <ellipse cx="80" cy="120" rx="34" ry="26" fill="#FFF5F7" opacity="0.9" />
+
+          {/* Sleepy Closed Curved Eyelids */}
+          <path d="M58 97 Q66 103 74 97" stroke="#702459" strokeWidth="2.8" strokeLinecap="round" />
+          <path d="M86 97 Q94 103 102 97" stroke="#702459" strokeWidth="2.8" strokeLinecap="round" />
+
+          {/* Cute Yawn Mouth */}
+          <ellipse cx="80" cy="106" rx="3.5" ry="4.5" fill="#702459" />
+
+          {/* Soft Pink Blush */}
+          <ellipse cx="52" cy="105" rx="8" ry="5" fill="#FBB6CE" />
+          <ellipse cx="108" cy="105" rx="8" ry="5" fill="#FBB6CE" />
+
+          {/* Hugging Marshmallow Cloud Pillow */}
+          <g transform="translate(62, 118)">
+            <ellipse cx="18" cy="12" rx="20" ry="12" fill="#FFFFFF" stroke="#FED7E2" strokeWidth="1.5" />
+            <ellipse cx="10" cy="10" rx="10" ry="8" fill="#FFFFFF" />
+            <ellipse cx="26" cy="10" rx="10" ry="8" fill="#FFFFFF" />
+            {/* Cute pink heart on pillow */}
+            <path
+              d="M18 10 C18 8 16.5 6.5 15 6.5 C13.5 6.5 12.5 7.5 12 8.5 C11.5 7.5 10.5 6.5 9 6.5 C7.5 6.5 6 8 6 10 C6 12 9 14.5 12 16 C15 14.5 18 12 18 10 Z"
+              fill="#FF85A1"
+              transform="scale(0.7) translate(10, 3)"
+            />
           </g>
 
-          {/* Body */}
-          <circle cx="80" cy="103" r="53" fill="url(#ciciBody)" />
-          <ellipse cx="80" cy="116" rx="33" ry="25" fill="#FFF5F7" opacity="0.9" />
-
-          {/* Cheerful big eyes */}
-          <circle cx="66" cy="94" r="7" fill="#702459" />
-          <circle cx="64" cy="91" r="2.8" fill="#FFFFFF" />
-          <circle cx="69" cy="96" r="1.5" fill="#FFFFFF" />
-
-          <circle cx="94" cy="94" r="7" fill="#702459" />
-          <circle cx="92" cy="91" r="2.8" fill="#FFFFFF" />
-          <circle cx="97" cy="96" r="1.5" fill="#FFFFFF" />
-
-          {/* Cheeks */}
-          <ellipse cx="54" cy="104" rx="7" ry="4" fill="#D53F8C" opacity="0.5" />
-          <ellipse cx="106" cy="104" rx="7" ry="4" fill="#D53F8C" opacity="0.5" />
-
-          {/* Joyful open mouth */}
-          <path d="M74 104 Q80 114 86 104 Z" fill="#97266D" />
-          <path d="M77 109 Q80 113 83 109" fill="#FED7D7" />
-
-          {/* Basket of tiny pies / blossoms */}
-          <g transform="translate(68, 122)">
-            <rect x="0" y="4" width="24" height="14" rx="4" fill="#ECC94B" stroke="#B7791F" strokeWidth="1.2" />
-            <path d="M3 4 C3 -2 21 -2 21 4" stroke="#B7791F" strokeWidth="1.5" fill="none" />
-            <circle cx="7" cy="4" r="3" fill="#E53E3E" />
-            <circle cx="13" cy="3" r="3" fill="#38A169" />
-            <circle cx="18" cy="4" r="3" fill="#ED64A6" />
+          {/* Floating Pink zZz */}
+          <g className="animate-pulse" opacity="0.85">
+            <text x="112" y="38" fill="#ED64A6" fontSize="13" fontWeight="bold">z</text>
+            <text x="123" y="26" fill="#F687B3" fontSize="17" fontWeight="bold">Z</text>
+            <text x="136" y="14" fill="#FED7E2" fontSize="21" fontWeight="bold">Z</text>
           </g>
 
-          <ellipse cx="62" cy="154" rx="13" ry="8" fill="#D53F8C" />
-          <ellipse cx="98" cy="154" rx="13" ry="8" fill="#D53F8C" />
+          {/* Little Feet */}
+          <ellipse cx="62" cy="155" rx="13" ry="8" fill="#D53F8C" />
+          <ellipse cx="98" cy="155" rx="13" ry="8" fill="#D53F8C" />
         </svg>
       );
 
@@ -434,17 +445,26 @@ export const CharacterVector = ({
           </defs>
           <ellipse cx="80" cy="165" rx="45" ry="10" fill="rgba(0,0,0,0.12)" />
 
-          {/* Retro Headphones Headband */}
-          <path d="M36 85 C36 38 124 38 124 85" stroke="#DD6B20" strokeWidth="6" strokeLinecap="round" fill="none" />
-          <rect x="28" y="75" width="14" height="26" rx="6" fill="#ED8936" stroke="#C05621" strokeWidth="1.5" />
-          <rect x="118" y="75" width="14" height="26" rx="6" fill="#ED8936" stroke="#C05621" strokeWidth="1.5" />
+          {/* Cute Pastel Orange Headphones with Chic Metal Band */}
+          <path d="M34 85 C34 36 126 36 126 85" stroke="#DD6B20" strokeWidth="6" strokeLinecap="round" fill="none" />
+          <rect x="26" y="74" width="16" height="28" rx="7" fill="#ED8936" stroke="#C05621" strokeWidth="1.5" />
+          <rect x="118" y="74" width="16" height="28" rx="7" fill="#ED8936" stroke="#C05621" strokeWidth="1.5" />
+
+          {/* Chic Ear Cushion Accents */}
+          <circle cx="34" cy="88" r="4" fill="#FBD38D" />
+          <circle cx="126" cy="88" r="4" fill="#FBD38D" />
 
           {/* Body */}
           <circle cx="80" cy="104" r="52" fill="url(#jeoBody)" />
           <ellipse cx="80" cy="118" rx="33" ry="25" fill="#E6FFFA" opacity="0.9" />
 
-          {/* Cool Sunglasses */}
-          <g transform="translate(50, 84)">
+          {/* Cute Cool Girl Bangs / Hair Tuft */}
+          <path d="M54 74 Q68 64 80 74 Q92 64 106 74 Q80 68 54 74 Z" fill="#234E52" />
+          <path d="M50 78 Q46 90 52 98 Q54 86 54 78 Z" fill="#234E52" />
+          <path d="M110 78 Q114 90 108 98 Q106 86 106 78 Z" fill="#234E52" />
+
+          {/* Chic Retro Shades lowered on bridge */}
+          <g transform="translate(50, 86)">
             <rect x="2" y="2" width="24" height="15" rx="4" fill="#1A202C" />
             <line x1="5" y1="5" x2="16" y2="14" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" />
             <rect x="34" y="2" width="24" height="15" rx="4" fill="#1A202C" />
@@ -452,15 +472,30 @@ export const CharacterVector = ({
             <path d="M26 8 L34 8" stroke="#1A202C" strokeWidth="3" />
           </g>
 
-          {/* Smirk */}
-          <path d="M78 108 Q84 113 90 106" stroke="#1D4044" strokeWidth="2.4" strokeLinecap="round" />
+          {/* Cute Eyes peeking over shades */}
+          <circle cx="62" cy="84" r="3.5" fill="#1D4044" />
+          <circle cx="61" cy="82.5" r="1.4" fill="#FFFFFF" />
+          <circle cx="98" cy="84" r="3.5" fill="#1D4044" />
+          <circle cx="97" cy="82.5" r="1.4" fill="#FFFFFF" />
 
-          {/* Finger gun / chill pose */}
-          <ellipse cx="36" cy="116" rx="8" ry="7" fill="#319795" />
-          <ellipse cx="124" cy="116" rx="8" ry="7" fill="#319795" />
+          {/* Cute Rosy Peach Blush */}
+          <ellipse cx="50" cy="104" rx="7" ry="4" fill="#FF85A1" opacity="0.6" />
+          <ellipse cx="110" cy="104" rx="7" ry="4" fill="#FF85A1" opacity="0.6" />
 
-          <ellipse cx="62" cy="154" rx="14" ry="8" fill="#285E61" />
-          <ellipse cx="98" cy="154" rx="14" ry="8" fill="#285E61" />
+          {/* Cute Cool Smirk */}
+          <path d="M78 108 Q84 114 91 107" stroke="#1D4044" strokeWidth="2.4" strokeLinecap="round" />
+
+          {/* Pink Heart Pin on Headphone */}
+          <g transform="translate(122, 68)">
+            <path
+              d="M5 2 C5 0.8 4 0 3 0 C2.2 0 1.6 0.6 1.3 1.3 C1 0.6 0.4 0 -0.4 0 C-1.4 0 -2.4 0.8 -2.4 2 C-2.4 3.5 -0.5 5.5 1.3 7 C3.1 5.5 5 3.5 5 2 Z"
+              fill="#FF5E7E"
+            />
+          </g>
+
+          {/* Feet with retro kicks */}
+          <ellipse cx="62" cy="154" rx="14" ry="9" fill="#285E61" />
+          <ellipse cx="98" cy="154" rx="14" ry="9" fill="#285E61" />
         </svg>
       );
 
@@ -672,6 +707,59 @@ export const CharacterVector = ({
           {/* Feet with cool kicks */}
           <ellipse cx="60" cy="156" rx="14" ry="9" fill="#48BB78" />
           <ellipse cx="100" cy="156" rx="14" ry="9" fill="#48BB78" />
+        </svg>
+      );
+
+    case 'zero':
+      return (
+        <svg viewBox="0 0 160 180" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="zeroBody" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stopColor="#4A5568" />
+              <stop offset="100%" stopColor="#1A202C" />
+            </radialGradient>
+          </defs>
+          <ellipse cx="80" cy="165" rx="46" ry="10" fill="rgba(0,0,0,0.14)" />
+
+          {/* Sleek Dark Hair / Cool Bangs */}
+          <path d="M48 64 C48 30 112 30 112 64 C112 75 106 82 102 74 C96 66 90 78 84 70 C78 80 70 68 62 76 C56 82 48 76 48 64 Z" fill="#171923" />
+          <path d="M72 58 Q80 72 86 62 Q78 68 72 58 Z" fill="#2D3748" />
+
+          {/* Main Body */}
+          <circle cx="80" cy="106" r="53" fill="url(#zeroBody)" />
+
+          {/* High-Collar Dark Overcoat / Turtleneck */}
+          <path d="M52 115 Q80 128 108 115 L114 155 L46 155 Z" fill="#1A202C" />
+          <path d="M60 110 Q80 120 100 110 Q80 126 60 110 Z" fill="#2D3748" stroke="#4A5568" strokeWidth="1.5" />
+
+          {/* Calm, Handsome Baritone Eyes */}
+          <g>
+            <ellipse cx="66" cy="94" rx="6.5" ry="5.5" fill="#E2E8F0" />
+            <circle cx="67" cy="94" r="4.5" fill="#0D1117" />
+            <circle cx="68" cy="92.5" r="1.6" fill="#F6AD55" />
+            <path d="M58 88 Q66 84 74 88" stroke="#0D1117" strokeWidth="2.2" strokeLinecap="round" />
+
+            <ellipse cx="94" cy="94" rx="6.5" ry="5.5" fill="#E2E8F0" />
+            <circle cx="93" cy="94" r="4.5" fill="#0D1117" />
+            <circle cx="92" cy="92.5" r="1.6" fill="#F6AD55" />
+            <path d="M86 88 Q94 84 102 88" stroke="#0D1117" strokeWidth="2.2" strokeLinecap="round" />
+          </g>
+
+          {/* Gentle, subtle calm smile */}
+          <path d="M75 106 Q80 110 85 106" stroke="#E2E8F0" strokeWidth="2" strokeLinecap="round" />
+
+          {/* Steaming Mug of Dark Roast Espresso with Resonance steam */}
+          <g transform="translate(68, 126)">
+            <rect x="4" y="6" width="16" height="14" rx="3" fill="#2D3748" stroke="#718096" strokeWidth="1.2" />
+            <path d="M20 9 C24 9 24 16 20 16" stroke="#718096" strokeWidth="1.5" fill="none" />
+            {/* Gentle steam curls */}
+            <path d="M9 4 Q11 1 9 -2" stroke="#CBD5E0" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity="0.75" />
+            <path d="M15 4 Q17 1 15 -2" stroke="#CBD5E0" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity="0.75" />
+          </g>
+
+          {/* Boots */}
+          <ellipse cx="62" cy="156" rx="13" ry="8" fill="#171923" />
+          <ellipse cx="98" cy="156" rx="13" ry="8" fill="#171923" />
         </svg>
       );
   }

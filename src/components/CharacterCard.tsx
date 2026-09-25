@@ -76,7 +76,7 @@ export const CharacterCard = ({
           <CharacterSprite
             id={character.id}
             imagePath={character.imagePath}
-            isSleeping={character.id === 'momo'}
+            isSleeping={character.id === 'cici'}
             isHovered={isHovered}
             className="w-full h-full"
           />
@@ -85,8 +85,11 @@ export const CharacterCard = ({
 
       {/* Bottom Info */}
       <div className="z-10 flex flex-col">
-        <h3 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white mb-1 group-hover:text-pink-600 dark:group-hover:text-pink-300 transition-colors">
-          {character.name[lang]}
+        <h3 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white mb-1 group-hover:text-pink-600 dark:group-hover:text-pink-300 transition-colors flex items-center gap-1.5">
+          <span>{character.name[lang]}</span>
+          {character.isFemale && (
+            <Heart className="w-4 h-4 text-pink-500 fill-pink-500 shrink-0 inline-block drop-shadow-xs" />
+          )}
         </h3>
         <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 line-clamp-2 mb-3">
           "{character.quote[lang]}"

@@ -4,6 +4,7 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
   {
     id: 'riri',
     number: '01',
+    isFemale: true,
     name: {
       id: 'Riri',
       en: 'Riri',
@@ -348,56 +349,57 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
   {
     id: 'cici',
     number: '05',
+    isFemale: true,
     name: {
       id: 'Cici',
       en: 'Cici',
       km: 'ស៊ីស៊ី (Cici)',
     },
     tagline: {
-      id: 'Koki kue mungil penebar kehangatan dan pelukan terlembut.',
-      en: 'The pastry sweetheart who spreads warm hugs and freshly baked pies.',
-      km: 'ចុងភៅនំតូចដែលតែងតែចែករំលែកការឱបដ៏កក់ក្តៅ និងនំដុតថ្មីៗ។',
+      id: 'Si manis pengantuk yang hobi tidur lelap berselimut awan lembut.',
+      en: 'The adorable sleepy sweetheart cuddled in fluffy cloud blankets.',
+      km: 'មិត្តងងុយគេងដ៏គួរឱ្យស្រឡាញ់ដែលចូលចិត្តគេងដណ្តប់ភួយពពកទន់ៗ។',
     },
     personality: {
-      id: ['Cheerful', 'Caring', 'Expressive'],
-      en: ['Cheerful', 'Caring', 'Expressive'],
-      km: ['រីករាយ', 'ចេះយកចិត្តទុកដាក់', 'ពូកែបង្ហាញអារម្មណ៍'],
+      id: ['Sleepy', 'Cozy', 'Sweet', 'Dreamy'],
+      en: ['Sleepy', 'Cozy', 'Sweet', 'Dreamy'],
+      km: ['ងងុយគេង', 'ស្រណុកសុខស្រួល', 'ផ្អែមល្ហែម', 'ចូលចិត្តសុបិន'],
     },
     quote: {
-      id: 'Semua orang berhak mendapatkan senyuman hangat dan sepotong kue hari ini!',
-      en: 'Everyone deserves a warm hug and a fresh slice of sweet pie today!',
-      km: 'មនុស្សគ្រប់គ្នាសក្តិសមនឹងទទួលបានការឱបដ៏កក់ក្តៅ និងនំផ្អែមមួយចំណិតនៅថ្ងៃនេះ!',
+      id: 'Hoaaam... selimut awan ini terlalu hangat, lima menit lagi ya zZz...',
+      en: 'Yaaawn... this fluffy cloud blanket is too cozy, five more minutes please zZz...',
+      km: 'ស្ងាប... ភួយពពកនេះក្តៅស្រួលពេកហើយ សុំ ៥ នាទីទៀត zZz...',
     },
     favorite: {
-      id: 'Memanggang pie blueberry, merangkai mahkota bunga, dan memberi pelukan',
-      en: 'Baking wild berry tarts, braiding flower wreaths, and warm hugs',
-      km: 'ការដុតនំប៊ឺរីព្រៃ ការត្បាញកម្រងផ្កា និងការឱបយ៉ាងកក់ក្តៅ',
+      id: 'Bantal awan marshmallow, susu madu hangat, dan tidur siang panjang',
+      en: 'Marshmallow cloud pillows, warm honey milk, and long cozy afternoon naps',
+      km: 'ខ្នើយពពកម៉ាសម៉ាឡូវ ទឹកដោះគោក្តៅជាមួយទឹកឃ្មុំ និងការគេងថ្ងៃ',
     },
     funFact: {
-      id: 'Bisa tahu perasaan temannya hanya dari aroma hembusan napas mereka.',
-      en: 'Can sense how a friend is feeling simply by the sweet aroma around them.',
-      km: 'អាចដឹងពីអារម្មណ៍របស់មិត្តភក្តិបាន តាមរយៈក្លិនក្រអូបផ្អែមជុំវិញខ្លួនពួកគេ។',
+      id: 'Bisa tertidur lelap dalam 10 detik saat mendengar dongeng pengantar tidur atau gemericik air.',
+      en: 'Can drift into deep sweet slumber in 10 seconds whenever a bedtime lullaby plays.',
+      km: 'អាចគេងលក់យ៉ាងស្កប់ស្កល់ត្រឹម ១០ វិនាទីពេលឮភ្លេងបំពេរគេងលក់។',
     },
     speechText: {
-      id: 'Yeay kamu datang! Aku baru selesai memanggang kue pie madu yang manis!',
-      en: 'Yay, you arrived! I just finished baking sweet honey berry pies!',
-      km: 'យេយ អ្នកមកដល់ហើយ! ខ្ញុំទើបតែដុតនំទឹកឃ្មុំប៊ឺរីរួចក្តៅៗ!',
+      id: 'Hoaaam... kamu mau ikut tidur siang bareng Cici di atas awan empuk ini?',
+      en: 'Yaaawn... would you like to take a cozy nap on this fluffy cloud with Cici?',
+      km: 'ស្ងាប... តើអ្នកចង់មកគេងថ្ងៃជាមួយស៊ីស៊ីនៅលើពពកទន់ៗនេះទេ?',
     },
     idleSpeech: {
       id: [
-        'Siapa yang mau coba kue hangat ini?',
-        'Bunga mawar ini mekar indah sekali!',
-        'Pelukan adalah obat terbaik.'
+        'zZz... marshmallow manis...',
+        'Hoaaam... mataku berat sekali...',
+        'Bantal awan ini empuk banget...'
       ],
       en: [
-        'Who wants a taste of this warm pie?',
-        'These rose blossoms smell divine!',
-        'A warm hug makes everything better.'
+        'zZz... sweet marshmallow dreams...',
+        'Yaaawn... eyelids feel so heavy...',
+        'This cloud pillow is heavenly soft...'
       ],
       km: [
-        'តើនរណាខ្លះចង់ភ្លក្សនំក្តៅៗនេះ?',
-        'ផ្កាកុលាបទាំងនេះរីកស្អាតណាស់!',
-        'ការឱបគឺជាថ្នាំព្យាបាលដ៏ល្អបំផុត។'
+        'zZz... សុបិនផ្អែមល្ហែម...',
+        'ស្ងាប... ត្របកភ្នែកធ្ងន់ណាស់...',
+        'ខ្នើយពពកនេះទន់ខ្លាំងណាស់...'
       ],
     },
     themeColor: {
@@ -410,7 +412,7 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
       glow: 'rgba(237, 100, 166, 0.45)',
     },
     imagePath: '/assets/characters/cici.png',
-    idleAnimation: 'bounce',
+    idleAnimation: 'sleep',
     worldPosition: {
       x: 60,
       y: 35,
@@ -418,22 +420,23 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
       zIndex: 14,
       facing: 'left',
       spotDescription: {
-        id: 'Di atas bukit awan manis sedang menata keranjang pie',
-        en: 'Arranging fresh sweet pastry baskets on the cloud terrace',
-        km: 'រៀបចំកន្ត្រកនំផ្អែមៗនៅលើដំបូលពពកដ៏ស្រស់ស្អាត',
+        id: 'Tidur lelap berselimut awan empuk di teras bukit langit',
+        en: 'Sleeping soundly wrapped in fluffy cloud blankets on the sky terrace',
+        km: 'គេងលក់យ៉ាងស្កប់ស្កល់ដណ្តប់ភួយពពកនៅលើដំបូលមេឃ',
       },
     },
-    soundType: 'pop',
+    soundType: 'yawn',
     specialReaction: {
-      id: 'Menghamburkan kelopak bunga mawar dan kue pie kecil yang melayang manis!',
-      en: 'Showers floating rose petals and mini sparkling pastry hearts!',
-      km: 'បាចផ្កាកុលាប និងបេះដូងនំតូចៗអណ្តែតលើអាកាសយ៉ាងផ្អែមល្ហែម!',
+      id: 'Menguap lucu, memeluk bantal awan, dan meniup gelembung tidur berkilau manis!',
+      en: 'Yawns adorably, hugs cloud pillow, and floats glowing dream bubbles!',
+      km: 'ស្ងាបយ៉ាងគួរឱ្យស្រឡាញ់ ឱបខ្នើយពពក និងបញ្ចេញពពុះសុបិនភ្លឺផ្លេកៗ!',
     },
   },
 
   {
     id: 'reirei',
     number: '06',
+    isFemale: true,
     name: {
       id: 'Rei Rei',
       en: 'Rei Rei',
@@ -520,56 +523,57 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
   {
     id: 'momo',
     number: '07',
+    isFemale: true,
     name: {
       id: 'Momo',
       en: 'Momo',
       km: 'ម៉ូម៉ូ (Momo)',
     },
     tagline: {
-      id: 'Si lembut yang hobi rebahan di bawah semak bunga mawar paling empuk.',
-      en: 'The soft sleepyhead snuggled cozily under sweet rose blossoms.',
-      km: 'អ្នកទន់ភ្លន់ដែលចូលចិត្តគេងសម្រាកក្រោមគុម្ពផ្កាកុលាបដ៏ទន់ស្អាត។',
+      id: 'Si manis ceria yang selalu melompat gembira dan menyebarkan senyuman hangat.',
+      en: 'The cheerful sweetie who hops with joy and spreads warm sunshine everywhere.',
+      km: 'មិត្តផ្អែមល្ហែម និងរីករាយដែលតែងតែលោតដោយក្តីស្រឡាញ់ និងចែករំលែកស្នាមញញឹម។',
     },
     personality: {
-      id: ['Sweet', 'Relaxed', 'Sleepy'],
-      en: ['Sweet', 'Relaxed', 'Sleepy'],
-      km: ['ផ្អែមល្ហែម', 'ស្រណុកសុខស្រួល', 'ងងុយគេង'],
+      id: ['Cheerful', 'Sweet', 'Bubbly', 'Joyful'],
+      en: ['Cheerful', 'Sweet', 'Bubbly', 'Joyful'],
+      km: ['រីករាយ', 'ផ្អែមល្ហែម', 'ស្រស់ស្រាយ', 'ពោរពេញដោយសុភមង្គល'],
     },
     quote: {
-      id: 'Momo lagi santai... lima menit lagi ya, kasurnya terlalu hangat zZz...',
-      en: 'Momo is relaxing... five more minutes please, the blanket is so cozy zZz...',
-      km: 'ម៉ូម៉ូកំពុងសម្រាក... សុំ ៥ នាទីទៀត ពូកនេះក្តៅស្រួលណាស់ zZz...',
+      id: 'Setiap hari adalah pesta senyuman! Ayo melompat dan menari bersama Momo!',
+      en: 'Every day is a sunshine party! Let’s hop and dance together with Momo!',
+      km: 'រាល់ថ្ងៃគឺជាពិធីបុណ្យនៃស្នាមញញឹម! តោះមកលោត និងរាំលេងជាមួយម៉ូម៉ូ!',
     },
     favorite: {
-      id: 'Bantal marshmallow, mimpi melayang, dan dongeng pengantar tidur',
-      en: 'Fluffy marshmallow pillows, floating dreams, and lullaby music',
-      km: 'ខ្នើយម៉ាសម៉ាឡូវទន់ៗ ការយល់សប្តិ និងតន្ត្រីបំពេរគេងលក់',
+      id: 'Tarian riang di padang bunga mawar, permen stroberi manis, dan tawa ceria sahabat',
+      en: 'Joyful dancing amidst sweet rose fields, strawberry candies, and happy giggles',
+      km: 'ការរាំយ៉ាងរីករាយនៅវាលផ្កាកុលាប ស្ករគ្រាប់ស្ត្របឺរី និងសំណើចរបស់មិត្តភក្តិ',
     },
     funFact: {
-      id: 'Bisa tertidur lelap dalam 10 detik di mana saja, bahkan saat berdiri tegak.',
-      en: 'Can fall sound asleep within 10 seconds flat anywhere, even standing upright.',
-      km: 'អាចគេងលក់ស្កប់ស្កល់ត្រឹម ១០ វិនាទីនៅគ្រប់ទីកន្លែង សូម្បីតែពេលឈរក៏ដោយ។',
+      id: 'Lompatan bahagianya bisa memantul begitu tinggi ketika ia mendengar melodi gembira!',
+      en: 'Her joyful hop can bounce remarkably high whenever a cheerful tune begins to play!',
+      km: 'ការលោតសប្បាយរបស់នាងអាចលោតបានខ្ពស់ខ្លាំងពេលឮភ្លេងរីករាយ!',
     },
     speechText: {
-      id: 'Hoaaam... kamu ngantuk juga ya? Sini rebahan bareng Momo.',
-      en: 'Yaaawn... are you sleepy too? Come snuggle on this floral lawn with Momo.',
-      km: 'ស្ងាប... អ្នកងងុយគេងដែរមែនទេ? មកគេងក្បែរម៉ូម៉ូនៅលើវាលផ្កានេះមក។',
+      id: 'Hai hai! Hari ini penuh energi ceria! Senang banget bisa main bareng kamu!',
+      en: 'Hi hi! Today is bursting with cheerful joy! So happy to play together with you!',
+      km: 'សួស្តី សួស្តី! ថ្ងៃនេះពោរពេញដោយក្តីរីករាយ! សប្បាយចិត្តណាស់ដែលបានលេងជាមួយអ្នក!',
     },
     idleSpeech: {
       id: [
-        'zZz... marshmallow manis...',
-        'Hoaaam... enaknya merem sebentar...',
-        'Rumput bunga ini empuk banget...'
+        'Hari ini cerah banget!',
+        'Ayo kita menari sebentar!',
+        'Senyummu bikin hariku makin manis!'
       ],
       en: [
-        'zZz... sweet marshmallow dreams...',
-        'Yaaawn... a quick five-minute nap...',
-        'This flower bed is so soft...'
+        'Such a bright sunny day!',
+        'Let’s do a happy little dance!',
+        'Your smile makes today extra sweet!'
       ],
       km: [
-        'zZz... សុបិនឃើញម៉ាសម៉ាឡូវផ្អែមឆ្ងាញ់...',
-        'ស្ងាប... បានបិទភ្នែកបន្តិចពិតជាស្រួល...',
-        'កម្រាលផ្កានេះទន់ខ្លាំងណាស់...'
+        'ថ្ងៃនេះស្រស់បំព្រងណាស់!',
+        'តោះមករាំលេងបន្តិច!',
+        'ស្នាមញញឹមរបស់អ្នកធ្វើឱ្យថ្ងៃនេះកាន់តែផ្អែមល្ហែម!'
       ],
     },
     themeColor: {
@@ -582,7 +586,7 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
       glow: 'rgba(159, 122, 234, 0.45)',
     },
     imagePath: '/assets/characters/momo.png',
-    idleAnimation: 'sleep',
+    idleAnimation: 'bounce',
     worldPosition: {
       x: 26,
       y: 78,
@@ -590,72 +594,73 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
       zIndex: 22,
       facing: 'right',
       spotDescription: {
-        id: 'Rebahan lelap di bawah semak bunga mawar yang harum dan hangat',
-        en: 'Curled up happily asleep in the warm, fragrant rose garden',
-        km: 'គេងលក់យ៉ាងស្កប់ស្កល់ក្នុងសួនផ្កាកុលាបដ៏ក្រអូប',
+        id: 'Menari riang di padang semak mawar merah muda yang bermekaran',
+        en: 'Dancing cheerfully amidst blooming pink rose bushes',
+        km: 'រាំយ៉ាងរីករាយក្នុងចំណោមគុម្ពផ្កាកុលាបពណ៌ផ្កាឈូក',
       },
     },
-    soundType: 'yawn',
+    soundType: 'giggle',
     specialReaction: {
-      id: 'Menguap panjang, memeluk guling bintang, dan mengeluarkan gelembung tidur berkilau!',
-      en: 'Yawns adorably, hugs star pillow, and floats glowing sleepy bubbles!',
-      km: 'ស្ងាបយ៉ាងគួរឱ្យស្រឡាញ់ ឱបខ្នើយផ្កាយ និងបញ្ចេញពពុះគេងភ្លឺផ្លេកៗ!',
+      id: 'Menari berputar riang dengan hamburan kelopak bunga merah muda dan hati bercahaya!',
+      en: 'Spins in a cheerful dance with floating pink flower petals and glowing hearts!',
+      km: 'រាំវិលជុំយ៉ាងរីករាយជាមួយផ្កាពណ៌ផ្កាឈូក និងបេះដូងភ្លឺចែងចាំង!',
     },
   },
 
   {
     id: 'jeo',
     number: '08',
+    isFemale: true,
     name: {
       id: 'Jeo',
       en: 'Jeo',
       km: 'ជេអូ (Jeo)',
     },
     tagline: {
-      id: 'Anak paling santai dan keren dengan headphone retro andalan.',
-      en: 'The chillest lo-fi groove master with iconic retro headphones.',
-      km: 'មិត្តដ៏ឡូយ និងស្រណុកសុខស្រួលជាមួយកាសស្តាប់ត្រចៀកបុរាណ។',
+      id: 'Gadis manis nan keren dengan headphone retro pastel dan playlist lo-fi estetik.',
+      en: 'The effortlessly cute & cool girl vibing with pastel retro headphones and aesthetic lo-fi beats.',
+      km: 'នារីដ៏គួរឱ្យស្រឡាញ់ និងឡូយស្អាត ជាមួយកាស retro pastel និងចង្វាក់ភ្លេង lo-fi ដ៏ពិរោះ។',
     },
     personality: {
-      id: ['Cool', 'Funny', 'Laid-back'],
-      en: ['Cool', 'Funny', 'Laid-back'],
-      km: ['ឡូយ', 'កំប្លែង', 'ស្រណុកសុខស្រួល'],
+      id: ['Cute', 'Cool Girl', 'Chic', 'Laid-back'],
+      en: ['Cute', 'Cool Girl', 'Chic', 'Laid-back'],
+      km: ['គួរឱ្យស្រឡាញ់', 'ឡូយស្អាត', 'ទាន់សម័យ', 'ស្រណុកសុខស្រួល'],
     },
     quote: {
-      id: 'Take it easy, bro! Dunia ini terlalu asyik untuk diburu-buru panik.',
-      en: 'Take it easy, friend! The world is far too good to rush through in a panic.',
-      km: 'កុំប្រញាប់ពេកមិត្ត! ពិភពលោកនេះពិតជាអស្ចារ្យពេកហើយ មិនបាច់តក់ក្រហល់ទេ។',
+      id: 'Stay cool, stay cute! Hidup ini terlalu asyik buat dibawa pusing, dengerin beat ini bareng aku yuk~',
+      en: 'Stay cool, stay cute! Life is far too sweet to stress over, vibe to this beat with me~',
+      km: 'ឡូយផង គួរឱ្យស្រឡាញ់ផង! ជីវិតនេះស្រស់បំព្រងណាស់ មកស្តាប់ចង្វាក់ភ្លេងជាមួយខ្ញុំណា~',
     },
     favorite: {
-      id: 'Headphone jingga retro, kacamata hitam bintang, dan irama lo-fi chill',
-      en: 'Orange retro headphones, star sunglasses, and chill vinyl beats',
-      km: 'កាសពណ៌ទឹកក្រូចបុរាណ វ៉ែនតាផ្កាយខ្មៅ និងភ្លេង lo-fi ស្រទន់',
+      id: 'Headphone jingga pastel, kacamata hitam retro, mixtape lo-fi estetik, dan es teh buah persik',
+      en: 'Pastel orange headphones, chic retro shades, aesthetic lo-fi mixtapes, and peach iced tea',
+      km: 'កាសពណ៌ទឹកក្រូច pastel វ៉ែនតាខ្មៅ អាល់ប៊ុម lo-fi និងតែផ្លែប៉េសត្រជាក់',
     },
     funFact: {
-      id: 'Bisa bermain skateboard di atas batang pelangi tanpa pernah terjatuh sekalipun.',
-      en: 'Can balance his skateboard across rainbow arcs without ever slipping once.',
-      km: 'អាចជិះស្គីលើធ្នូឥន្ទធនូបានយ៉ាងស្ទាត់ជំនាញដោយមិនដែលធ្លាក់ឡើយ។',
+      id: 'Bisa meremix ketukan langkah kaki siapa saja menjadi melodi lo-fi yang menenangkan hanya dalam 5 detik.',
+      en: 'Can remix anyone’s walking footsteps into a soothing, aesthetic lo-fi loop in 5 seconds flat.',
+      km: 'អាចកែច្នៃស្នាមជើងរបស់អ្នកណាម្នាក់ឱ្យក្លាយជាភ្លេង lo-fi ដ៏ពិរោះក្នុងរយៈពេលតែ ៥ វិនាទី។',
     },
     speechText: {
-      id: 'Sup bro! Cuaca hari ini 10/10 banget. Nikmati ketukan musiknya yuk!',
-      en: 'Sup buddy! Today’s vibe is a solid 10 out of 10. Catch this groove!',
-      km: 'សួស្តីមិត្ត! អាកាសធាតុថ្ងៃនេះល្អខ្លាំងណាស់ ១០/១០។ តោះស្តាប់ភ្លេងទាំងអស់គ្នា!',
+      id: 'Hey! Suka lagu yang santai gak? Headphone-ku lagi mutar playlist paling aesthetic buat kamu.',
+      en: 'Hey there! Into chill vibes? My headphones are playing the most aesthetic playlist for you.',
+      km: 'សួស្តី! ចូលចិត្តបទភ្លេងស្រាលៗទេ? កាសរបស់ខ្ញុំកំពុងចាក់ចម្រៀងដ៏ស្រស់ស្អាតបំផុតសម្រាប់អ្នក។',
     },
     idleSpeech: {
       id: [
-        'Beat lagu ini asyik banget...',
-        'Santai saja, gak usah tegang kawan.',
-        'Kacamata ini bikin dunia makin kece.'
+        'Bass-nya empuk banget di telinga...',
+        'Kacamata ini bikin gayaku makin 10/10.',
+        'Santai aja, dunia gak bakal lari kok.'
       ],
       en: [
-        'This lo-fi beat is immaculate...',
-        'Chill out, no rush at all.',
-        'These star shades make the world look cool.'
+        'This smooth bass groove is so good...',
+        'These shades complete my 10/10 aesthetic.',
+        'Keep it chill, no rush at all.'
       ],
       km: [
-        'ចង្វាក់ភ្លេងនេះពិរោះខ្លាំងណាស់...',
-        'សម្រាកសិនទៅ កុំតានតឹងពេក។',
-        'វ៉ែនតាផ្កាយនេះធ្វើឱ្យពិភពលោកកាន់តែឡូយ។'
+        'សំឡេងបាសពិរោះស្រទន់ណាស់...',
+        'វ៉ែនតានេះធ្វើឱ្យស្ទីលខ្ញុំឡូយ ១០/១០។',
+        'សម្រាកសិនទៅ ពិភពលោកមិនរត់ទៅណាទេ។'
       ],
     },
     themeColor: {
@@ -676,16 +681,16 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
       zIndex: 21,
       facing: 'left',
       spotDescription: {
-        id: 'Bersandar santai di bangku taman kayu dekat kincir angin',
-        en: 'Reclining smoothly on the park bench by the windmill',
-        km: 'ផ្អែកខ្នងយ៉ាងស្រណុកលើកៅអីសួនក្បែរកង្ហារខ្យល់',
+        id: 'Duduk santai di bangku taman kayu sambil memutar playlist lo-fi aesthetic',
+        en: 'Lounging on the park bench vibing to her aesthetic lo-fi playlist',
+        km: 'អង្គុយលើកៅអីសួនយ៉ាងស្រណុក ស្តាប់បញ្ជីចម្រៀង lo-fi',
       },
     },
-    soundType: 'pop',
+    soundType: 'wink',
     specialReaction: {
-      id: 'Menurunkan kacamata hitamnya dengan gaya finger-gun disertai melodi funk asyik!',
-      en: 'Tips down star sunglasses with double finger guns and a funky tune!',
-      km: 'ទម្លាក់វ៉ែនតាផ្កាយចុះ ធ្វើកាយវិការបាញ់កាំភ្លើងដៃ និងចាក់ភ្លេង funk យ៉ាងឡូយ!',
+      id: 'Menurunkan kacamata hitamnya dengan kedipan manis finger-gun dan melodi groove estetik!',
+      en: 'Tips down retro shades with a cute wink, finger-guns, and an aesthetic lo-fi melody!',
+      km: 'ទម្លាក់វ៉ែនតាចុះ ញញឹមបាញ់ភ្នែកគួរឱ្យស្រឡាញ់ និងចាក់ភ្លេង lo-fi យ៉ាងឡូយ!',
     },
   },
 
@@ -1030,6 +1035,93 @@ export const CHARACTERS_DATA: CharacterPersonality[] = [
       id: 'Melakukan pose charming wink, memutar topi snapback, dan mengeluarkan koin bintang emas!',
       en: 'Spins his snapback cap, charming wink, and produces golden star tokens!',
       km: 'វិលមួក snapback ញញឹមបាញ់ភ្នែក និងទាញយកកាក់ផ្កាយមាសយ៉ាងឡូយ!',
+    },
+  },
+
+  {
+    id: 'zero',
+    number: '13',
+    isFemale: false,
+    name: {
+      id: 'Zero',
+      en: 'Zero',
+      km: 'ហ្សេរ៉ូ (Zero)',
+    },
+    tagline: {
+      id: 'Cowok bersuara bariton berat nan hangat dengan aura tenang dan penuh pesona.',
+      en: 'The deep-voiced guy with a calm, mysterious aura and a soothing baritone heart.',
+      km: 'បុរសសំឡេងធ្ងន់ដ៏កក់ក្តៅ មានមន្តស្នេហ៍អាថ៌កំបាំង និងភាពស្ងប់ស្ងាត់។',
+    },
+    personality: {
+      id: ['Deep Voice', 'Calm', 'Enigmatic', 'Gentle Guy'],
+      en: ['Deep Voice', 'Calm', 'Enigmatic', 'Gentle Guy'],
+      km: ['សំឡេងធ្ងន់', 'ស្ងប់ស្ងាត់', 'អាថ៌កំបាំង', 'សុភាពរាបសារ'],
+    },
+    quote: {
+      id: 'Dunia kadang terlalu bising. Bicara pelan saja... suaraku akan selalu menemanimu di sini.',
+      en: 'The world gets too loud sometimes. Speak softly... my voice will always keep you company.',
+      km: 'ពេលខ្លះពិភពលោកនេះមានសំឡេងរំខានខ្លាំងណាស់។ និយាយតិចៗមក... សំឡេងខ្ញុំតែងតែនៅក្បែរអ្នក។',
+    },
+    favorite: {
+      id: 'Kopi espresso hitam hangat, piringan hitam jazz midnight, dan angin malam di puncak tebing',
+      en: 'Rich dark espresso, midnight jazz vinyl records, and cool midnight cliff breezes',
+      km: 'កាហ្វេ espresso ខ្មៅក្តៅ កំណាត់ចានបៀ jazz រាត្រី និងខ្យល់ត្រជាក់លើកំពូលភ្នំ',
+    },
+    funFact: {
+      id: 'Suara baritonnya yang begitu berat dan beresonansi bisa menenangkan dedaunan yang bergetar dan menidurkan tupai malam.',
+      en: 'His low, resonant baritone voice can instantly soothe fluttering leaves and calm restless night critters.',
+      km: 'សំឡេងធ្ងន់ដ៏ពីរោះរបស់គេ អាចលួងលោមស្លឹកឈើដែលញ័រ និងសត្វព្រៃរាត្រីឱ្យស្ងប់ចិត្តបានភ្លាមៗ។',
+    },
+    speechText: {
+      id: 'Halo. Suaraku mungkin terdengar berat, tapi jangan sungkan... duduklah bersamaku di gardu pandang ini.',
+      en: 'Hello. My voice might sound deep, but don’t be shy... come sit with me by the overlook.',
+      km: 'សួស្តី។ សំឡេងរបស់ខ្ញុំប្រហែលជាធ្ងន់បន្តិច ប៉ុន្តែកុំបារម្ភ... មកអង្គុយមើលទេសភាពជាមួយខ្ញុំទីនេះមក។',
+    },
+    idleSpeech: {
+      id: [
+        'Malam yang sunyi selalu punya melodi sendiri.',
+        'Kopi hitam ini baru saja diseduh.',
+        'Tarik napas dalam-dalam... semuanya akan baik-baik saja.'
+      ],
+      en: [
+        'Quiet nights always hold their own hidden melody.',
+        'This dark roast coffee is freshly brewed.',
+        'Take a slow deep breath... everything will be alright.'
+      ],
+      km: [
+        'រាត្រីស្ងប់ស្ងាត់តែងតែមានភ្លេងផ្ទាល់ខ្លួន។',
+        'កាហ្វេខ្មៅនេះទើបតែឆុងរួចថ្មីៗ។',
+        'ដកដង្ហើមវែងៗ... អ្វីៗនឹងល្អប្រសើរឡើងវិញ។'
+      ],
+    },
+    themeColor: {
+      primary: '#2D3748',
+      secondary: '#718096',
+      bg: '#F7FAFC',
+      text: '#1A202C',
+      accent: '#4A5568',
+      border: '#CBD5E0',
+      glow: 'rgba(45, 55, 72, 0.45)',
+    },
+    imagePath: '/assets/characters/zero.png',
+    idleAnimation: 'breathe',
+    worldPosition: {
+      x: 77,
+      y: 48,
+      scale: 1.06,
+      zIndex: 16,
+      facing: 'left',
+      spotDescription: {
+        id: 'Berdiri tenang di gardu pandang tebing senja sambil menikmati kopi hitam',
+        en: 'Standing calmly on the twilight cliff overlook enjoying black coffee',
+        km: 'ឈរយ៉ាងស្ងប់ស្ងាត់នៅលើកំពូលភ្នំមើលទេសភាពពេលព្រលប់ ពិសាកាហ្វេខ្មៅ',
+      },
+    },
+    soundType: 'deep',
+    specialReaction: {
+      id: 'Berbisik dalam nada bariton hangat yang memicu gelombang bass beresonansi menenangkan!',
+      en: 'Whispers in a warm baritone, sending soothing low-frequency acoustic ripples across the hills!',
+      km: 'ខ្សឹបដោយសំឡេងធ្ងន់ដ៏កក់ក្តៅ បញ្ចេញរលកសំឡេងបាសដ៏ស្ងប់ស្ងាត់!',
     },
   },
 ];

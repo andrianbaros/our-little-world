@@ -1,24 +1,56 @@
 <svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <radialGradient id="momoBody" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stopColor="#E9D8FD" />
-          <stop offset="100%" stopColor="#9F7AEA" />
-        </radialGradient>
-      </defs>
-      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
-      <path d="M65 80 C56 30 125 18 138 62 Z" fill="#B794F4" />
-      <path d="M138 62 C156 56 172 75 168 93" stroke="#B794F4" strokeWidth="7" strokeLinecap="round" />
-      <circle cx="170" cy="97" r="9" fill="#FEFCBF" />
-      <circle cx="100" cy="132" r="66" fill="url(#momoBody)" />
-      <ellipse cx="100" cy="150" rx="43" ry="32" fill="#FAF5FF" opacity="0.9" />
-      <path d="M72 121 Q82 129 92 121" stroke="#44337A" strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M108 121 Q118 129 128 121" stroke="#44337A" strokeWidth="3.5" strokeLinecap="round" />
-      <ellipse cx="100" cy="131" rx="4" ry="5" fill="#44337A" />
-      <ellipse cx="65" cy="131" rx="10" ry="6" fill="#D6BCFA" />
-      <ellipse cx="135" cy="131" rx="10" ry="6" fill="#D6BCFA" />
-      <g transform="translate(85, 148)">
-        <path d="M15 0 L19 10 L30 11 L21 19 L24 29 L15 22.5 L6 29 L9 19 L0 11 L11 10 Z" fill="#FEFCBF" stroke="#ECC94B" strokeWidth="1.5" />
-      </g>
-      <ellipse cx="78" cy="193" rx="16" ry="10" fill="#805AD5" />
-      <ellipse cx="122" cy="193" rx="16" ry="10" fill="#805AD5" />
-    </svg>
+  <defs>
+    <radialGradient id="momoBody" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stopColor="#E9D8FD" />
+      <stop offset="100%" stopColor="#9F7AEA" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="100" cy="205" rx="58" ry="12" fill="rgba(0,0,0,0.12)" />
+
+  {/* Cheerful Lavender Ears */}
+  <circle cx="60" cy="76" r="21" fill="#9F7AEA" />
+  <circle cx="60" cy="76" r="12" fill="#FAF5FF" />
+  <circle cx="140" cy="76" r="21" fill="#9F7AEA" />
+  <circle cx="140" cy="76" r="12" fill="#FAF5FF" />
+
+  {/* Sweet Pink Heart Ribbon on Ear */}
+  <g transform="translate(130, 60)">
+    <path
+      d="M12 4 C12 1.8 10.2 0 8 0 C6.4 0 5 1 4.4 2.4 C3.8 1 2.4 0 0.8 0 C-1.4 0 -3.2 1.8 -3.2 4 C-3.2 7 0 10.5 4.4 13.5 C8.8 10.5 12 7 12 4 Z"
+      fill="#FF5E7E"
+    />
+  </g>
+
+  {/* Fluffy Marshmallow Body */}
+  <circle cx="100" cy="132" r="66" fill="url(#momoBody)" />
+  <ellipse cx="100" cy="150" rx="43" ry="32" fill="#FAF5FF" opacity="0.9" />
+
+  {/* Big Cheerful Eyes */}
+  <circle cx="82" cy="116" r="9.5" fill="#44337A" />
+  <circle cx="80" cy="112" r="3.8" fill="#FFFFFF" />
+  <circle cx="86" cy="118" r="2" fill="#FFFFFF" />
+
+  <circle cx="118" cy="116" r="9.5" fill="#44337A" />
+  <circle cx="116" cy="112" r="3.8" fill="#FFFFFF" />
+  <circle cx="122" cy="118" r="2" fill="#FFFFFF" />
+
+  {/* Joyful Open Smile with Tongue */}
+  <path d="M90 131 Q100 148 110 131 Z" fill="#6B46C1" />
+  <path d="M94 138 Q100 146 106 138" fill="#FF85A1" />
+
+  {/* Rosy Pink Cheeks */}
+  <ellipse cx="66" cy="130" rx="10" ry="6" fill="#FF5E7E" opacity="0.55" />
+  <ellipse cx="134" cy="130" rx="10" ry="6" fill="#FF5E7E" opacity="0.55" />
+
+  {/* Pink Heart Chest Badge */}
+  <g transform="translate(92, 156)">
+    <path
+      d="M8 3 C8 1.3 6.7 0 5 0 C3.8 0 2.7 0.9 2.2 2 C1.7 0.9 0.6 0 -0.6 0 C-2.3 0 -3.6 1.3 -3.6 3 C-3.6 5.5 0 8.5 2.2 11 C4.4 8.5 8 5.5 8 3 Z"
+      fill="#FF5E7E"
+    />
+  </g>
+
+  {/* Happy Feet */}
+  <ellipse cx="78" cy="194" rx="16" ry="10" fill="#805AD5" />
+  <ellipse cx="122" cy="194" rx="16" ry="10" fill="#805AD5" />
+</svg>

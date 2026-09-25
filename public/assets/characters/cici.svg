@@ -1,39 +1,59 @@
 <svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <radialGradient id="ciciBody" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stopColor="#FED7E2" />
-          <stop offset="100%" stopColor="#ED64A6" />
-        </radialGradient>
-      </defs>
-      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
-      <circle cx="60" cy="76" r="21" fill="#ED64A6" />
-      <circle cx="60" cy="76" r="12" fill="#FFF5F7" />
-      <circle cx="140" cy="76" r="21" fill="#ED64A6" />
-      <circle cx="140" cy="76" r="12" fill="#FFF5F7" />
-      <g transform="translate(45, 56)">
-        <circle cx="10" cy="5" r="6" fill="#FFFFFF" />
-        <circle cx="15" cy="10" r="6" fill="#FFFFFF" />
-        <circle cx="10" cy="15" r="6" fill="#FFFFFF" />
-        <circle cx="5" cy="10" r="6" fill="#FFFFFF" />
-        <circle cx="10" cy="10" r="4.5" fill="#F6E05E" />
-      </g>
-      <circle cx="100" cy="127" r="65" fill="url(#ciciBody)" />
-      <ellipse cx="100" cy="144" rx="41" ry="31" fill="#FFF5F7" opacity="0.9" />
-      <circle cx="82" cy="116" r="8.5" fill="#702459" />
-      <circle cx="80" cy="112" r="3.4" fill="#FFFFFF" />
-      <circle cx="118" cy="116" r="8.5" fill="#702459" />
-      <circle cx="116" cy="112" r="3.4" fill="#FFFFFF" />
-      <ellipse cx="68" cy="128" rx="9" ry="5" fill="#D53F8C" opacity="0.5" />
-      <ellipse cx="132" cy="128" rx="9" ry="5" fill="#D53F8C" opacity="0.5" />
-      <path d="M92 128 Q100 140 108 128 Z" fill="#97266D" />
-      <path d="M96 134 Q100 139 104 134" fill="#FED7D7" />
-      <g transform="translate(85, 150)">
-        <rect x="0" y="5" width="30" height="18" rx="5" fill="#ECC94B" stroke="#B7791F" strokeWidth="1.5" />
-        <path d="M4 5 C4 -2 26 -2 26 5" stroke="#B7791F" strokeWidth="1.8" fill="none" />
-        <circle cx="9" cy="5" r="3.5" fill="#E53E3E" />
-        <circle cx="16" cy="4" r="3.5" fill="#38A169" />
-        <circle cx="22" cy="5" r="3.5" fill="#ED64A6" />
-      </g>
-      <ellipse cx="78" cy="192" rx="16" ry="10" fill="#D53F8C" />
-      <ellipse cx="122" cy="192" rx="16" ry="10" fill="#D53F8C" />
-    </svg>
+  <defs>
+    <radialGradient id="ciciBody" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stopColor="#FED7E2" />
+      <stop offset="100%" stopColor="#ED64A6" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+
+  {/* Cozy Nightcap */}
+  <path d="M65 80 C56 30 125 18 138 62 Z" fill="#FBB6CE" />
+  <path d="M138 62 C156 56 172 75 168 93" stroke="#FBB6CE" strokeWidth="7" strokeLinecap="round" />
+  <circle cx="170" cy="97" r="9" fill="#FFF5F7" />
+
+  {/* Rounded Ears */}
+  <circle cx="60" cy="82" r="20" fill="#ED64A6" />
+  <circle cx="60" cy="82" r="11" fill="#FFF5F7" />
+  <circle cx="140" cy="82" r="20" fill="#ED64A6" />
+  <circle cx="140" cy="82" r="11" fill="#FFF5F7" />
+
+  {/* Soft Body */}
+  <circle cx="100" cy="132" r="66" fill="url(#ciciBody)" />
+  <ellipse cx="100" cy="150" rx="43" ry="32" fill="#FFF5F7" opacity="0.9" />
+
+  {/* Sleepy closed eyelids */}
+  <path d="M72 121 Q82 129 92 121" stroke="#702459" strokeWidth="3.5" strokeLinecap="round" />
+  <path d="M108 121 Q118 129 128 121" stroke="#702459" strokeWidth="3.5" strokeLinecap="round" />
+
+  {/* Sleepy little yawn mouth */}
+  <ellipse cx="100" cy="132" rx="4.5" ry="5.5" fill="#702459" />
+
+  {/* Soft Pink Blush */}
+  <ellipse cx="65" cy="131" rx="10" ry="6" fill="#FBB6CE" />
+  <ellipse cx="135" cy="131" rx="10" ry="6" fill="#FBB6CE" />
+
+  {/* Hugging Marshmallow Cloud Pillow */}
+  <g transform="translate(75, 146)">
+    <ellipse cx="25" cy="16" rx="26" ry="16" fill="#FFFFFF" stroke="#FED7E2" strokeWidth="2" />
+    <ellipse cx="14" cy="14" rx="13" ry="10" fill="#FFFFFF" />
+    <ellipse cx="36" cy="14" rx="13" ry="10" fill="#FFFFFF" />
+    {/* Pink Heart on Pillow */}
+    <path
+      d="M25 14 C25 11.5 23 9.5 21 9.5 C19.2 9.5 18 10.7 17.5 12 C17 10.7 15.8 9.5 14 9.5 C12 9.5 10 11.5 10 14 C10 16.5 14 19.5 17.5 22 C21 19.5 25 16.5 25 14 Z"
+      fill="#FF85A1"
+      transform="scale(0.8) translate(7, 3)"
+    />
+  </g>
+
+  {/* Floating Zzz */}
+  <g opacity="0.85">
+    <text x="140" y="50" fill="#ED64A6" fontSize="16" fontWeight="bold">z</text>
+    <text x="154" y="35" fill="#F687B3" fontSize="21" fontWeight="bold">Z</text>
+    <text x="170" y="20" fill="#FED7E2" fontSize="26" fontWeight="bold">Z</text>
+  </g>
+
+  {/* Little Feet */}
+  <ellipse cx="78" cy="194" rx="16" ry="10" fill="#D53F8C" />
+  <ellipse cx="122" cy="194" rx="16" ry="10" fill="#D53F8C" />
+</svg>

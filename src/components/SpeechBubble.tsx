@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { Smile, X, ChevronRight } from 'lucide-react';
+import { Smile, X, ChevronRight, Heart } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { UI_TRANSLATIONS } from '../translations/ui';
 
@@ -44,7 +44,11 @@ export const SpeechBubble = ({
               className="text-xs font-black uppercase tracking-wider flex items-center gap-1.5"
               style={{ color: character.themeColor.primary }}
             >
-              <Smile className="w-3.5 h-3.5" />
+              {character.isFemale ? (
+                <Heart className="w-3.5 h-3.5 text-pink-500 fill-pink-500" />
+              ) : (
+                <Smile className="w-3.5 h-3.5" />
+              )}
               {character.name[lang]}
             </span>
             <button
