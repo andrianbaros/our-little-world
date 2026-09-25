@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="ataBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#90CDF4" />
+          <stop offset="100%" stopColor="#3182CE" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+      <path d="M40 118 C20 142 12 182 25 192 C42 186 52 150 56 130 Z" fill="#E53E3E" />
+      <path d="M160 118 C180 142 188 182 175 192 C158 186 148 150 144 130 Z" fill="#C53030" />
+      <circle cx="60" cy="76" r="20" fill="#2B6CB0" />
+      <circle cx="140" cy="76" r="20" fill="#2B6CB0" />
+      <circle cx="100" cy="126" r="66" fill="url(#ataBody)" />
+      <ellipse cx="100" cy="144" rx="41" ry="31" fill="#EBF8FF" opacity="0.9" />
+      <path d="M100 76 L102.5 81 L108 82 L104 86 L105 91 L100 88.5 L95 91 L96 86 L92 82 L97.5 81 Z" fill="#ECC94B" />
+      <circle cx="82" cy="116" r="8.5" fill="#1A365D" />
+      <circle cx="80" cy="112" r="3.4" fill="#FFFFFF" />
+      <circle cx="118" cy="116" r="8.5" fill="#1A365D" />
+      <circle cx="116" cy="112" r="3.4" fill="#FFFFFF" />
+      <path d="M94 130 Q100 138 108 129" stroke="#1A365D" strokeWidth="3" strokeLinecap="round" />
+      <path d="M85 148 Q100 156 115 148 Q100 160 85 148" fill="#E53E3E" />
+      <circle cx="100" cy="151" r="5" fill="#ECC94B" />
+      <ellipse cx="75" cy="192" rx="17" ry="11" fill="#2B6CB0" />
+      <ellipse cx="125" cy="192" rx="17" ry="11" fill="#2B6CB0" />
+    </svg>

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cocoBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#FEFCBF" />
+          <stop offset="100%" stopColor="#D69E2E" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+      <circle cx="60" cy="76" r="22" fill="#D69E2E" />
+      <circle cx="60" cy="76" r="13" fill="#FEFCBF" />
+      <circle cx="140" cy="76" r="22" fill="#D69E2E" />
+      <circle cx="140" cy="76" r="13" fill="#FEFCBF" />
+      <circle cx="100" cy="128" r="66" fill="url(#cocoBody)" />
+      <ellipse cx="100" cy="146" rx="42" ry="32" fill="#FFFFF0" opacity="0.9" />
+      <path d="M75 118 Q84 108 93 118" stroke="#5F370E" strokeWidth="3.6" strokeLinecap="round" />
+      <path d="M107 118 Q116 108 125 118" stroke="#5F370E" strokeWidth="3.6" strokeLinecap="round" />
+      <ellipse cx="68" cy="128" rx="9" ry="5" fill="#ED8936" opacity="0.6" />
+      <ellipse cx="132" cy="128" rx="9" ry="5" fill="#ED8936" opacity="0.6" />
+      <ellipse cx="100" cy="123" rx="3.5" ry="2.5" fill="#5F370E" />
+      <path d="M92 129 Q100 137 108 129" stroke="#5F370E" strokeWidth="3" strokeLinecap="round" />
+      <g transform="translate(85, 144)">
+        <circle cx="15" cy="15" r="15" fill="#ECC94B" />
+        <circle cx="15" cy="15" r="7.5" fill="#7B341E" />
+        <path d="M15 30 L15 38" stroke="#38A169" strokeWidth="3" />
+      </g>
+      <ellipse cx="78" cy="193" rx="17" ry="10" fill="#B7791F" />
+      <ellipse cx="122" cy="193" rx="17" ry="10" fill="#B7791F" />
+    </svg>

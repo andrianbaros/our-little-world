@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="momoBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#E9D8FD" />
+          <stop offset="100%" stopColor="#9F7AEA" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+      <path d="M65 80 C56 30 125 18 138 62 Z" fill="#B794F4" />
+      <path d="M138 62 C156 56 172 75 168 93" stroke="#B794F4" strokeWidth="7" strokeLinecap="round" />
+      <circle cx="170" cy="97" r="9" fill="#FEFCBF" />
+      <circle cx="100" cy="132" r="66" fill="url(#momoBody)" />
+      <ellipse cx="100" cy="150" rx="43" ry="32" fill="#FAF5FF" opacity="0.9" />
+      <path d="M72 121 Q82 129 92 121" stroke="#44337A" strokeWidth="3.5" strokeLinecap="round" />
+      <path d="M108 121 Q118 129 128 121" stroke="#44337A" strokeWidth="3.5" strokeLinecap="round" />
+      <ellipse cx="100" cy="131" rx="4" ry="5" fill="#44337A" />
+      <ellipse cx="65" cy="131" rx="10" ry="6" fill="#D6BCFA" />
+      <ellipse cx="135" cy="131" rx="10" ry="6" fill="#D6BCFA" />
+      <g transform="translate(85, 148)">
+        <path d="M15 0 L19 10 L30 11 L21 19 L24 29 L15 22.5 L6 29 L9 19 L0 11 L11 10 Z" fill="#FEFCBF" stroke="#ECC94B" strokeWidth="1.5" />
+      </g>
+      <ellipse cx="78" cy="193" rx="16" ry="10" fill="#805AD5" />
+      <ellipse cx="122" cy="193" rx="16" ry="10" fill="#805AD5" />
+    </svg>

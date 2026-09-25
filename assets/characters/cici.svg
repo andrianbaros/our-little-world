@@ -1,0 +1,39 @@
+<svg viewBox="0 0 200 220" width="400" height="440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="ciciBody" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#FED7E2" />
+          <stop offset="100%" stopColor="#ED64A6" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="205" rx="55" ry="12" fill="rgba(0,0,0,0.12)" />
+      <circle cx="60" cy="76" r="21" fill="#ED64A6" />
+      <circle cx="60" cy="76" r="12" fill="#FFF5F7" />
+      <circle cx="140" cy="76" r="21" fill="#ED64A6" />
+      <circle cx="140" cy="76" r="12" fill="#FFF5F7" />
+      <g transform="translate(45, 56)">
+        <circle cx="10" cy="5" r="6" fill="#FFFFFF" />
+        <circle cx="15" cy="10" r="6" fill="#FFFFFF" />
+        <circle cx="10" cy="15" r="6" fill="#FFFFFF" />
+        <circle cx="5" cy="10" r="6" fill="#FFFFFF" />
+        <circle cx="10" cy="10" r="4.5" fill="#F6E05E" />
+      </g>
+      <circle cx="100" cy="127" r="65" fill="url(#ciciBody)" />
+      <ellipse cx="100" cy="144" rx="41" ry="31" fill="#FFF5F7" opacity="0.9" />
+      <circle cx="82" cy="116" r="8.5" fill="#702459" />
+      <circle cx="80" cy="112" r="3.4" fill="#FFFFFF" />
+      <circle cx="118" cy="116" r="8.5" fill="#702459" />
+      <circle cx="116" cy="112" r="3.4" fill="#FFFFFF" />
+      <ellipse cx="68" cy="128" rx="9" ry="5" fill="#D53F8C" opacity="0.5" />
+      <ellipse cx="132" cy="128" rx="9" ry="5" fill="#D53F8C" opacity="0.5" />
+      <path d="M92 128 Q100 140 108 128 Z" fill="#97266D" />
+      <path d="M96 134 Q100 139 104 134" fill="#FED7D7" />
+      <g transform="translate(85, 150)">
+        <rect x="0" y="5" width="30" height="18" rx="5" fill="#ECC94B" stroke="#B7791F" strokeWidth="1.5" />
+        <path d="M4 5 C4 -2 26 -2 26 5" stroke="#B7791F" strokeWidth="1.8" fill="none" />
+        <circle cx="9" cy="5" r="3.5" fill="#E53E3E" />
+        <circle cx="16" cy="4" r="3.5" fill="#38A169" />
+        <circle cx="22" cy="5" r="3.5" fill="#ED64A6" />
+      </g>
+      <ellipse cx="78" cy="192" rx="16" ry="10" fill="#D53F8C" />
+      <ellipse cx="122" cy="192" rx="16" ry="10" fill="#D53F8C" />
+    </svg>
