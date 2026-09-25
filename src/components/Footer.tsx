@@ -1,4 +1,4 @@
-import { Sparkles, Heart, ArrowUp } from 'lucide-react';
+import { Smile, Heart, ArrowUp } from 'lucide-react';
 import { soundFx } from '../utils/audio';
 import type { Language } from '../types/character';
 import { UI_TRANSLATIONS } from '../translations/ui';
@@ -17,7 +17,7 @@ export const Footer = ({ lang, onBackToTop }: FooterProps) => {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-pink-500 to-amber-400 flex items-center justify-center text-white shadow-xs border-b-2 border-pink-700">
-            <Sparkles className="w-4 h-4" />
+            <Smile className="w-4 h-4" />
           </div>
           <div className="text-left">
             <p className="text-sm font-black text-gray-900 dark:text-white uppercase tracking-wider">

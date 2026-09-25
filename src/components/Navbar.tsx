@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Sparkles, Sun, Moon, Volume2, VolumeX, Menu, X, Wand2, Globe } from 'lucide-react';
+import { Smile, Sun, Moon, Volume2, VolumeX, Menu, X, Dice5, Globe } from 'lucide-react';
 import { soundFx } from '../utils/audio';
 import type { Language } from '../types/character';
 import { UI_TRANSLATIONS } from '../translations/ui';
@@ -61,14 +61,14 @@ export const Navbar = ({
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo with 3D tactile feel */}
+        {/* Brand Logo with cute warm Smile */}
         <a
           href="#"
           onClick={() => soundFx.playPop()}
           className="flex items-center gap-2.5 group cursor-pointer"
         >
           <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-pink-500 via-rose-500 to-amber-400 flex items-center justify-center text-white shadow-md border-b-3 border-pink-700 group-hover:scale-105 active:scale-95 transition-transform">
-            <Sparkles className="w-5 h-5" />
+            <Smile className="w-5 h-5" />
           </div>
           <div className="flex flex-col text-left">
             <span className="text-sm sm:text-base font-black tracking-wider text-gray-900 dark:text-white uppercase leading-none">
@@ -96,7 +96,7 @@ export const Navbar = ({
 
         {/* Actions Row */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Language Selector Dropdown / Pill */}
+          {/* Language Selector Dropdown */}
           <div className="relative">
             <button
               onClick={() => {
@@ -104,7 +104,7 @@ export const Navbar = ({
                 setIsLangMenuOpen(!isLangMenuOpen);
               }}
               className="px-2.5 py-1.5 rounded-full text-xs font-black bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border-2 border-gray-200 dark:border-gray-700 shadow-xs flex items-center gap-1.5 cursor-pointer hover:border-pink-300 active:scale-95 transition-all"
-              title="Change Language / Ganti Bahasa"
+              title="Change Language"
             >
               <Globe className="w-3.5 h-3.5 text-pink-500" />
               <span className="uppercase">{lang}</span>
@@ -133,14 +133,14 @@ export const Navbar = ({
                       <span>{l.flag}</span>
                       <span>{l.label}</span>
                     </span>
-                    {lang === l.code && <Sparkles className="w-3 h-3 fill-white" />}
+                    {lang === l.code && <span className="text-xs font-black">✓</span>}
                   </button>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Surprise Me Button */}
+          {/* Surprise Me Button (using Dice5) */}
           <button
             onClick={() => {
               soundFx.playChime();
@@ -149,7 +149,7 @@ export const Navbar = ({
             className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-200 hover:bg-amber-200 dark:hover:bg-amber-900 border-2 border-amber-300 dark:border-amber-700 transition-all cursor-pointer active:scale-95 shadow-xs"
             title="Random Character Surprise"
           >
-            <Wand2 className="w-3.5 h-3.5" />
+            <Dice5 className="w-3.5 h-3.5" />
             <span>{ui.nav.surpriseMe}</span>
           </button>
 
@@ -240,7 +240,7 @@ export const Navbar = ({
             }}
             className="mt-2 w-full py-2.5 rounded-xl bg-amber-500 text-white font-bold text-xs flex items-center justify-center gap-2 cursor-pointer shadow-xs border-b-2 border-amber-700"
           >
-            <Wand2 className="w-4 h-4" />
+            <Dice5 className="w-4 h-4" />
             <span>{ui.nav.surpriseMe}</span>
           </button>
         </div>

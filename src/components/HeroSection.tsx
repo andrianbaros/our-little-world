@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowDown, Star } from 'lucide-react';
+import { ArrowDown, Smile, Users } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { CharacterSprite } from './CharacterSprite';
 import { soundFx } from '../utils/audio';
@@ -46,32 +46,38 @@ export const HeroSection = ({
         }`}
       />
 
-      {/* Floating Whimsical Stickers */}
-      <div className="absolute top-20 left-10 animate-float-slow text-2xl opacity-75 hidden sm:block">
-        ✨
+      {/* Floating Storybook Leaves and Flowers (No AI Sparkles) */}
+      <div className="absolute top-20 left-10 animate-float-slow text-2xl opacity-80 hidden sm:block">
+        🍃
       </div>
       <div
-        className="absolute top-36 right-14 animate-float-slow text-2xl opacity-75 hidden sm:block"
+        className="absolute top-36 right-14 animate-float-slow text-2xl opacity-80 hidden sm:block"
         style={{ animationDelay: '1.5s' }}
       >
         🌸
       </div>
       <div
-        className="absolute bottom-28 left-16 animate-float-slow text-2xl opacity-75 hidden md:block"
+        className="absolute bottom-28 left-16 animate-float-slow text-2xl opacity-80 hidden md:block"
         style={{ animationDelay: '2.5s' }}
       >
-        🌿
+        🌼
+      </div>
+      <div
+        className="absolute bottom-36 right-20 animate-float-slow text-2xl opacity-75 hidden md:block"
+        style={{ animationDelay: '3.2s' }}
+      >
+        🎈
       </div>
 
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center z-10">
-        {/* Welcome Pill Sticker */}
+        {/* Welcome Pill Sticker with Smile icon */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-black tracking-wide mb-6 backdrop-blur-md bg-white/85 dark:bg-white/10 text-pink-600 dark:text-pink-300 border-2 border-pink-200 dark:border-pink-800 shadow-sm"
         >
-          <Sparkles className="w-4 h-4 animate-spin text-pink-500" />
+          <Smile className="w-4 h-4 text-pink-500" />
           <span>{ui.hero.badge}</span>
         </motion.div>
 
@@ -83,7 +89,7 @@ export const HeroSection = ({
           className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-gray-900 dark:text-white leading-[1.15] mb-4"
         >
           {ui.hero.titleLine1} <br />
-          <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-amber-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 bg-clip-text text-transparent">
             {ui.hero.titleLine2}
           </span>
         </motion.h1>
@@ -128,7 +134,7 @@ export const HeroSection = ({
         {/* Staggered Characters Showcase Arc */}
         <div className="w-full relative mt-4 pt-4">
           <div className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 flex items-center justify-center gap-1.5">
-            <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+            <Users className="w-3.5 h-3.5 text-pink-500" />
             <span>{ui.hero.staggerProgress(visibleCount, characters.length)}</span>
           </div>
 

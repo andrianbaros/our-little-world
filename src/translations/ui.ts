@@ -37,6 +37,7 @@ export const UI_TRANSLATIONS: Record<Language, {
     searchPlaceholder: string;
     clear: string;
     allPill: string;
+    friendBadge: string;
     viewInWorld: string;
     viewProfile: string;
     noResults: string;
@@ -44,6 +45,7 @@ export const UI_TRANSLATIONS: Record<Language, {
   };
   modal: {
     boop: (count: number) => string;
+    friendBadge: string;
     favoriteThing: string;
     funFact: string;
     quoteTitle: string;
@@ -80,7 +82,7 @@ export const UI_TRANSLATIONS: Record<Language, {
     nav: {
       home: 'BERANDA',
       world: 'DUNIA',
-      characters: 'KARAKTER',
+      characters: 'SAHABAT',
       about: 'TENTANG',
       surpriseMe: 'Kejutkan Aku!',
       soundOn: 'Nyalakan Suara',
@@ -94,23 +96,24 @@ export const UI_TRANSLATIONS: Record<Language, {
       titleLine2: 'Our Little World',
       subtitle: '12 sahabat kecil, satu dunia yang hangat. Setiap karakter memiliki warna, kepribadian, dan cerita ceria tersendiri.',
       meetButton: 'Temui Semuanya',
-      albumButton: 'Album Koleksi (#01 - #12)',
+      albumButton: 'Album Sahabat Mungil',
       staggerProgress: (curr, tot) => `Karakter berdatangan satu per satu (${curr} / ${tot})`,
     },
     world: {
-      badge: 'LITTLE WORLD SCENE • 12 KARAKTER',
+      badge: 'LITTLE WORLD SCENE • 12 SAHABAT',
       instruction: 'Klik karakter untuk mendengar suara & cerita mereka',
       parallaxHint: 'Geser kursor untuk efek parallax 3D',
       clickHint: 'Klik karakter untuk berinteraksi',
       viewProfile: 'Lihat Profil',
     },
     collection: {
-      badge: 'ALBUM KOLEKSI • 12 KARAKTER',
+      badge: 'ALBUM SAHABAT • 12 KARAKTER',
       title: 'Meet the Gang',
       subtitle: 'Setiap karakter memiliki keunikan, hobi, warna, dan ekspresi yang mengisi kehangatan dunia kecil ini.',
       searchPlaceholder: 'Cari nama atau sifat (misal: Riri, Brave, Jayzee)...',
       clear: 'Hapus',
-      allPill: '🌟 Semua',
+      allPill: '🍀 Semua',
+      friendBadge: 'Sahabat',
       viewInWorld: 'Lihat di Dunia',
       viewProfile: 'Profil',
       noResults: 'Tidak ada karakter yang cocok dengan pencarian.',
@@ -118,9 +121,10 @@ export const UI_TRANSLATIONS: Record<Language, {
     },
     modal: {
       boop: (cnt) => `Klik untuk Boop! (${cnt})`,
+      friendBadge: 'Sahabat Little World',
       favoriteThing: 'Hal Favorit:',
-      funFact: 'Fakta Seru:',
-      quoteTitle: 'Quote Favorit',
+      funFact: 'Fakta Menarik:',
+      quoteTitle: 'Kutipan Favorit',
       close: 'Tutup (Esc)',
       listenSound: 'Dengarkan Suara',
       prev: 'Sebelumnya',
@@ -137,7 +141,7 @@ export const UI_TRANSLATIONS: Record<Language, {
         sleepy: 'Pengen Santai & Rebahan ☁️',
         tea: 'Lagi Pengen Ditemenin Teh 🍵',
         adventure: 'Siap Berpetualang Baru 🧭',
-        cool: 'Lagi Pengen Tampil Kece & Keren ✨',
+        cool: 'Lagi Pengen Tampil Kece & Keren 😎',
         caring: 'Pengen Pelukan Hangat 🌸',
       },
     },
@@ -155,7 +159,7 @@ export const UI_TRANSLATIONS: Record<Language, {
     nav: {
       home: 'HOME',
       world: 'WORLD',
-      characters: 'CHARACTERS',
+      characters: 'FRIENDS',
       about: 'ABOUT',
       surpriseMe: 'Surprise Me!',
       soundOn: 'Enable Sound',
@@ -169,23 +173,24 @@ export const UI_TRANSLATIONS: Record<Language, {
       titleLine2: 'Our Little World',
       subtitle: '12 little characters, one big cozy world. Every little friend has their own whimsical colors, personality, and stories.',
       meetButton: 'Meet Everyone',
-      albumButton: 'Collectible Album (#01 - #12)',
-      staggerProgress: (curr, tot) => `Characters arriving one by one (${curr} / ${tot})`,
+      albumButton: 'Little Friends Album',
+      staggerProgress: (curr, tot) => `Friends arriving one by one (${curr} / ${tot})`,
     },
     world: {
-      badge: 'LITTLE WORLD SCENE • 12 CHARACTERS',
+      badge: 'LITTLE WORLD SCENE • 12 FRIENDS',
       instruction: 'Click any character to hear their voice & whimsical story',
       parallaxHint: 'Move cursor for spatial 3D parallax',
       clickHint: 'Click characters to interact',
       viewProfile: 'View Profile',
     },
     collection: {
-      badge: 'COLLECTIBLE ALBUM • 12 CHARACTERS',
+      badge: 'FRIENDS ALBUM • 12 CHARACTERS',
       title: 'Meet the Gang',
       subtitle: 'Each friend brings their own unique style, passions, and warm smiles to our tiny universe.',
       searchPlaceholder: 'Search name or traits (e.g., Riri, Brave, Jayzee)...',
       clear: 'Clear',
-      allPill: '🌟 All',
+      allPill: '🍀 All',
+      friendBadge: 'Friend',
       viewInWorld: 'Inspect in World',
       viewProfile: 'Profile',
       noResults: 'No characters matched your search.',
@@ -193,6 +198,7 @@ export const UI_TRANSLATIONS: Record<Language, {
     },
     modal: {
       boop: (cnt) => `Click to Boop! (${cnt})`,
+      friendBadge: 'Little World Friend',
       favoriteThing: 'Favorite Thing:',
       funFact: 'Fun Fact:',
       quoteTitle: 'Favorite Quote',
@@ -212,7 +218,7 @@ export const UI_TRANSLATIONS: Record<Language, {
         sleepy: 'Sleepy & Cozy Naps ☁️',
         tea: 'Sipping Warm Tea 🍵',
         adventure: 'Ready for Adventure 🧭',
-        cool: 'Cool, Stylin & Confident ✨',
+        cool: 'Cool, Stylin & Confident 😎',
         caring: 'Warm Hugs & Baking 🌸',
       },
     },
@@ -230,7 +236,7 @@ export const UI_TRANSLATIONS: Record<Language, {
     nav: {
       home: 'ទំព័រដើម',
       world: 'ពិភពលោក',
-      characters: 'តួអង្គ',
+      characters: 'មិត្តភក្តិ',
       about: 'អំពីយើង',
       surpriseMe: 'ភ្ញាក់ផ្អើល!',
       soundOn: 'បើកសំឡេង',
@@ -244,23 +250,24 @@ export const UI_TRANSLATIONS: Record<Language, {
       titleLine2: 'ពិភពលោកតូចរបស់យើង',
       subtitle: 'តួអង្គតូចៗ ១២ នាក់ ក្នុងពិភពលោកដ៏កក់ក្តៅតែមួយ។ មិត្តតូចម្នាក់ៗមានពណ៌ចម្រុះ បុគ្គលិកលក្ខណៈ និងរឿងរ៉ាវគួរឱ្យស្រឡាញ់រៀងៗខ្លួន។',
       meetButton: 'ជួបជាមួយអ្នកទាំងអស់គ្នា',
-      albumButton: 'អាល់ប៊ុមប្រមូល (#01 - #12)',
-      staggerProgress: (curr, tot) => `តួអង្គមកដល់ម្តងមួយៗ (${curr} / ${tot})`,
+      albumButton: 'អាល់ប៊ុមមិត្តភក្តិ',
+      staggerProgress: (curr, tot) => `មិត្តភក្តិមកដល់ម្តងមួយៗ (${curr} / ${tot})`,
     },
     world: {
-      badge: 'ទិដ្ឋភាពពិភពលោកតូច • ១២ តួអង្គ',
+      badge: 'ទិដ្ឋភាពពិភពលោកតូច • ១២ មិត្តភក្តិ',
       instruction: 'ចុចលើតួអង្គដើម្បីស្តាប់សំឡេង និងរឿងរ៉ាវរបស់ពួកគេ',
       parallaxHint: 'រំកិលកណ្ដុរដើម្បីទទួលបានបែបផែន 3D',
       clickHint: 'ចុចលើតួអង្គដើម្បីធ្វើអន្តរកម្ម',
       viewProfile: 'មើលប្រវត្តិរូប',
     },
     collection: {
-      badge: 'អាល់ប៊ុមប្រមូលតួអង្គ • ១២ នាក់',
+      badge: 'អាល់ប៊ុមមិត្តភក្តិ • ១២ នាក់',
       title: 'ជួបជាមួយក្រុមមិត្តភក្តិ',
       subtitle: 'តួអង្គនីមួយៗសុទ្ធតែមានចំណង់ចំណូលចិត្ត ពណ៌ និងស្នាមញញឹមដ៏ស្រស់ស្អាតដែលបំពេញភាពកក់ក្តៅដល់ពិភពលោកនេះ។',
       searchPlaceholder: 'ស្វែងរកឈ្មោះ ឬបុគ្គលិកលក្ខណៈ...',
       clear: 'សម្អាត',
-      allPill: '🌟 ទាំងអស់',
+      allPill: '🍀 ទាំងអស់',
+      friendBadge: 'មិត្តភក្តិ',
       viewInWorld: 'មើលក្នុងពិភពលោក',
       viewProfile: 'ប្រវត្តិរូប',
       noResults: 'រកមិនឃើញតួអង្គដែលត្រូវនឹងការស្វែងរកទេ។',
@@ -268,6 +275,7 @@ export const UI_TRANSLATIONS: Record<Language, {
     },
     modal: {
       boop: (cnt) => `ចុចដើម្បី Boop! (${cnt})`,
+      friendBadge: 'មិត្តភក្តិ Little World',
       favoriteThing: 'របស់ដែលចូលចិត្ត:',
       funFact: 'រឿងគួរឱ្យចាប់អារម្មណ៍:',
       quoteTitle: 'សម្រង់សម្តីដែលចូលចិត្ត',
@@ -287,7 +295,7 @@ export const UI_TRANSLATIONS: Record<Language, {
         sleepy: 'ចង់សម្រាក និងគេងលក់ស្រួល ☁️',
         tea: 'ចង់ផឹកតែមួយពែងក្តៅៗ 🍵',
         adventure: 'ត្រៀមខ្លួនសម្រាប់ការផ្សងព្រេងថ្មី 🧭',
-        cool: 'មានទំនុកចិត្ត ទាន់សម័យ និងឡូយ ✨',
+        cool: 'មានទំនុកចិត្ត ទាន់សម័យ និងឡូយ 😎',
         caring: 'ត្រូវការការឱបដ៏កក់ក្តៅ និងផ្អែមល្ហែម 🌸',
       },
     },

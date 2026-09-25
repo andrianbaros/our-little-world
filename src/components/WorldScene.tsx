@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
+import { Compass, PartyPopper } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { CharacterSprite } from './CharacterSprite';
 import { SpeechBubble } from './SpeechBubble';
@@ -72,10 +72,8 @@ export const WorldScene = ({
   const handleCharacterClick = (char: CharacterPersonality, e: React.MouseEvent) => {
     e.stopPropagation();
 
-    // Sound effect
     soundFx.playBySoundType(char.soundType);
 
-    // Multi-click check for rare interaction
     const count = (multiClickCounts[char.id] || 0) + 1;
     setMultiClickCounts((prev) => ({ ...prev, [char.id]: count }));
 
@@ -89,7 +87,7 @@ export const WorldScene = ({
       soundFx.playFanfare();
     }
 
-    // Nearby reaction: pick a neighboring character to give a small reaction
+    // Nearby reaction
     const otherChars = characters.filter((c) => c.id !== char.id);
     if (otherChars.length > 0) {
       const neighbor = otherChars[Math.floor(Math.random() * otherChars.length)];
@@ -104,12 +102,10 @@ export const WorldScene = ({
     });
   };
 
-  // Close speech bubble
   const handleCloseSpeech = () => {
     setActiveSpeech(null);
   };
 
-  // Interactive pond click
   const handlePondClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     soundFx.playPop();
@@ -129,10 +125,9 @@ export const WorldScene = ({
           : 'bg-gradient-to-b from-[#e3f2fd] via-[#fce4ec] to-[#f3f9f4]'
       }`}
     >
-      {/* Living Ambient Layers */}
       <LivingEnvironment isNight={isNight} mousePos={mousePos} />
 
-      {/* Landscape Layer 1: Distant Misty Rolling Hills */}
+      {/* Landscape Layer 1: Distant Rolling Hills */}
       <div
         className="absolute bottom-0 inset-x-0 h-[65%] z-0 transition-transform duration-700 ease-out pointer-events-none"
         style={{
@@ -173,7 +168,7 @@ export const WorldScene = ({
           />
         </svg>
 
-        {/* Cozy mushroom cottages & lantern trees on midground */}
+        {/* Cozy cottages & trees */}
         <div className="absolute bottom-[40%] left-[28%] opacity-85">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
             <path d="M5 25 C5 12 35 12 35 25 Z" fill={isNight ? '#805ad5' : '#ff6b8b'} />
@@ -191,16 +186,15 @@ export const WorldScene = ({
               <circle
                 cx="17"
                 cy="15"
-                r="4"
+                r="3.5"
                 fill="#fef08a"
-                className="animate-sparkle"
               />
             )}
           </svg>
         </div>
       </div>
 
-      {/* Landscape Layer 3: Foreground Main Meadow & Interactive Crystal Pond */}
+      {/* Landscape Layer 3: Foreground Main Meadow & Interactive Pond */}
       <div
         className="absolute bottom-0 inset-x-0 h-[38%] z-2 transition-transform duration-700 ease-out pointer-events-none"
         style={{
@@ -213,7 +207,6 @@ export const WorldScene = ({
           preserveAspectRatio="none"
           fill="none"
         >
-          {/* Main green turf */}
           <path
             d="M0 90 C360 40 680 120 1020 60 C1240 20 1360 80 1440 60 L1440 280 L0 280 Z"
             fill={isNight ? '#1e3350' : '#b7e4c7'}
@@ -260,10 +253,10 @@ export const WorldScene = ({
         </div>
       </div>
 
-      {/* Scene Title Badge Overlay */}
+      {/* Scene Title Badge with Compass (No AI Sparkles) */}
       <div className="absolute top-6 left-6 z-30 pointer-events-none flex flex-col gap-1">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black tracking-wide backdrop-blur-md bg-white/85 dark:bg-black/50 text-gray-800 dark:text-gray-200 border-2 border-white/60 dark:border-white/10 shadow-sm">
-          <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin" />
+          <Compass className="w-3.5 h-3.5 text-pink-500" />
           <span>{ui.world.badge}</span>
         </div>
         <p className="text-[11px] text-gray-600 dark:text-gray-400 pl-1 font-bold">
@@ -271,7 +264,7 @@ export const WorldScene = ({
         </p>
       </div>
 
-      {/* Special Reaction Toast Banner */}
+      {/* Special Reaction Toast Banner with PartyPopper */}
       {specialReactionNotice && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -279,8 +272,8 @@ export const WorldScene = ({
           exit={{ opacity: 0, y: -20 }}
           className="absolute top-16 left-1/2 -translate-x-1/2 z-40 px-5 py-2.5 rounded-2xl bg-amber-500 text-white shadow-xl flex items-center gap-2 text-xs sm:text-sm font-black border-2 border-white/80 animate-bounce"
         >
-          <Sparkles className="w-4 h-4 fill-white" />
-          {specialReactionNotice}
+          <PartyPopper className="w-4 h-4" />
+          <span>{specialReactionNotice}</span>
         </motion.div>
       )}
 
@@ -311,7 +304,7 @@ export const WorldScene = ({
             >
               {/* Highlight Aura */}
               {isHighlighted && (
-                <div className="absolute inset-0 -m-6 rounded-full border-4 border-amber-400 bg-amber-400/25 animate-ping pointer-events-none" />
+                <div className="absolute inset-0 -m-6 rounded-full border-4 border-pink-400 bg-pink-400/20 animate-ping pointer-events-none" />
               )}
 
               {/* Speech Bubble popup */}

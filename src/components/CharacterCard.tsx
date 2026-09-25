@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Compass, Eye } from 'lucide-react';
+import { Compass, Eye, Heart } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { CharacterSprite } from './CharacterSprite';
 import { soundFx } from '../utils/audio';
@@ -43,20 +43,20 @@ export const CharacterCard = ({
       }}
       onClick={() => onOpenProfile(character)}
     >
-      {/* Top Bar: Number badge & Personality mini dot */}
+      {/* Top Bar: Friendship tag (NO NUMBERS / NO RANKINGS) */}
       <div className="flex items-center justify-between z-10">
         <span
-          className="text-xs font-black tracking-wider px-2.5 py-0.5 rounded-full border"
+          className="text-xs font-black tracking-wider px-2.5 py-0.5 rounded-full border flex items-center gap-1.5"
           style={{
             backgroundColor: `${character.themeColor.bg}`,
             color: character.themeColor.primary,
             borderColor: character.themeColor.border,
           }}
         >
-          #{character.number}
+          <Heart className="w-3 h-3 fill-current" />
+          <span>{ui.collection.friendBadge}</span>
         </span>
-        <span className="text-[11px] font-black text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors flex items-center gap-1">
-          <Sparkles className="w-3 h-3 text-amber-400" />
+        <span className="text-[11px] font-black text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
           {character.personality[lang][0] || character.personality.en[0]}
         </span>
       </div>

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Sparkles, Search } from 'lucide-react';
+import { Users, Search } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { CharacterCard } from './CharacterCard';
 import { soundFx } from '../utils/audio';
@@ -59,7 +59,7 @@ export const CharacterCollection = ({
       {/* Section Header */}
       <div className="flex flex-col items-center text-center mb-12">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black tracking-wider mb-4 bg-pink-100 dark:bg-pink-950/60 text-pink-600 dark:text-pink-300 border-2 border-pink-200 dark:border-pink-800">
-          <Sparkles className="w-3.5 h-3.5" />
+          <Users className="w-3.5 h-3.5 text-pink-500" />
           <span>{ui.collection.badge}</span>
         </div>
         <h2 className="text-3xl sm:text-5xl font-black text-gray-900 dark:text-white tracking-tight mb-3">

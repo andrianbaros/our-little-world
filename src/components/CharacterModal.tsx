@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Sparkles, Heart, Compass, Star, ChevronLeft, ChevronRight, Volume2 } from 'lucide-react';
+import { X, Heart, Compass, ChevronLeft, ChevronRight, Volume2, Quote, Lightbulb } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import type { CharacterPersonality, Language } from '../types/character';
 import { CharacterSprite } from './CharacterSprite';
@@ -203,17 +203,18 @@ export const CharacterModal = ({
               <div className="md:col-span-7 flex flex-col">
                 <div className="flex items-center gap-2 mb-1">
                   <span
-                    className="px-2.5 py-0.5 rounded-full text-xs font-black tracking-wider border"
+                    className="px-2.5 py-0.5 rounded-full text-xs font-black tracking-wider border flex items-center gap-1.5"
                     style={{
                       backgroundColor: character.themeColor.bg,
                       color: character.themeColor.primary,
                       borderColor: character.themeColor.border,
                     }}
                   >
-                    NO. {character.number}
+                    <Heart className="w-3 h-3 fill-current" />
+                    {ui.collection.friendBadge}
                   </span>
                   <span className="text-xs font-bold text-gray-400">
-                    Character Universe
+                    Our Little World
                   </span>
                 </div>
 
@@ -253,7 +254,7 @@ export const CharacterModal = ({
                     className="text-xs font-black uppercase tracking-wider block mb-1 flex items-center gap-1"
                     style={{ color: character.themeColor.primary }}
                   >
-                    <Sparkles className="w-3.5 h-3.5" />
+                    <Quote className="w-3.5 h-3.5" />
                     {ui.modal.quoteTitle}
                   </span>
                   <p
@@ -278,7 +279,7 @@ export const CharacterModal = ({
 
                   <div className="p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/60 border-2 border-gray-100 dark:border-gray-700/60">
                     <span className="font-black text-gray-900 dark:text-gray-100 block mb-0.5 flex items-center gap-1.5">
-                      <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                      <Lightbulb className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
                       {ui.modal.funFact}
                     </span>
                     <p className="text-gray-600 dark:text-gray-300 font-semibold">

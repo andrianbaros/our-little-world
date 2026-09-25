@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Sparkles, Smile, Stars } from 'lucide-react';
+import { BookOpen, Smile, ChevronRight } from 'lucide-react';
 import type { CharacterPersonality, Language } from '../types/character';
 import { soundFx } from '../utils/audio';
 import { UI_TRANSLATIONS } from '../translations/ui';
@@ -48,7 +48,7 @@ export const AboutSection = ({
 
         <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black tracking-wider mb-4 bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border-2 border-purple-200 dark:border-purple-800">
-            <Sparkles className="w-3.5 h-3.5" />
+            <BookOpen className="w-3.5 h-3.5" />
             <span>{ui.about.badge}</span>
           </div>
 
@@ -87,7 +87,7 @@ export const AboutSection = ({
                     }`}
                   >
                     <span>{moodLabel}</span>
-                    <Stars className="w-3.5 h-3.5 opacity-60" />
+                    <ChevronRight className="w-3.5 h-3.5 opacity-60" />
                   </button>
                 );
               })}

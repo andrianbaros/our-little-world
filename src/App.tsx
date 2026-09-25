@@ -9,7 +9,7 @@ import { Footer } from './components/Footer';
 import { CHARACTERS_DATA } from './data/characters';
 import type { CharacterPersonality, Language } from './types/character';
 import { UI_TRANSLATIONS } from './translations/ui';
-import { Sparkles } from 'lucide-react';
+import { Smile } from 'lucide-react';
 
 export function App() {
   const [isNight, setIsNight] = useState(false);
@@ -106,7 +106,7 @@ export function App() {
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#ffeef2] dark:bg-[#0e1326] transition-opacity duration-500">
           <div className="relative flex flex-col items-center animate-bounce-cute">
             <div className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-pink-500 via-purple-500 to-amber-400 flex items-center justify-center shadow-xl mb-4 border-b-4 border-pink-700">
-              <Sparkles className="w-8 h-8 text-white animate-spin" />
+              <Smile className="w-8 h-8 text-white animate-pulse" />
             </div>
             <h2 className="text-xl font-black text-gray-900 dark:text-white tracking-wider">
               {ui.brandTitle}
