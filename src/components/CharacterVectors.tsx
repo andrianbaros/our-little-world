@@ -475,29 +475,33 @@ export const CharacterVector = ({
         <svg viewBox="0 0 160 180" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <radialGradient id="jeoBody" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stopColor="#B2F5EA" />
-              <stop offset="100%" stopColor="#319795" />
+              <stop offset="0%" stopColor="#FEEBC8" />
+              <stop offset="100%" stopColor="#DD6B20" />
             </radialGradient>
           </defs>
           <ellipse cx="80" cy="165" rx="45" ry="10" fill="rgba(0,0,0,0.12)" />
 
-          {/* Cute Pastel Orange Headphones with Chic Metal Band */}
-          <path d="M34 85 C34 36 126 36 126 85" stroke="#DD6B20" strokeWidth="6" strokeLinecap="round" fill="none" />
-          <rect x="26" y="74" width="16" height="28" rx="7" fill="#ED8936" stroke="#C05621" strokeWidth="1.5" />
-          <rect x="118" y="74" width="16" height="28" rx="7" fill="#ED8936" stroke="#C05621" strokeWidth="1.5" />
+          {/* Chic Mint-Teal Retro Headphones with Metal Band */}
+          <path d="M34 85 C34 36 126 36 126 85" stroke="#319795" strokeWidth="6" strokeLinecap="round" fill="none" />
+          <rect x="26" y="74" width="16" height="28" rx="7" fill="#38B2AC" stroke="#234E52" strokeWidth="1.5" />
+          <rect x="118" y="74" width="16" height="28" rx="7" fill="#38B2AC" stroke="#234E52" strokeWidth="1.5" />
 
           {/* Chic Ear Cushion Accents */}
-          <circle cx="34" cy="88" r="4" fill="#FBD38D" />
-          <circle cx="126" cy="88" r="4" fill="#FBD38D" />
+          <circle cx="34" cy="88" r="4" fill="#B2F5EA" />
+          <circle cx="126" cy="88" r="4" fill="#B2F5EA" />
+
+          {/* Cute pointy ears (from the beloved orange character) */}
+          <polygon points="42,70 30,25 60,50" fill="#DD6B20" />
+          <polygon points="44,66 36,34 56,52" fill="#FEEBC8" />
+          <polygon points="118,70 130,25 100,50" fill="#DD6B20" />
+          <polygon points="116,66 124,34 104,52" fill="#FEEBC8" />
 
           {/* Body */}
-          <circle cx="80" cy="104" r="52" fill="url(#jeoBody)" />
-          <ellipse cx="80" cy="118" rx="33" ry="25" fill="#E6FFFA" opacity="0.9" />
+          <circle cx="80" cy="104" r="53" fill="url(#jeoBody)" />
+          <ellipse cx="80" cy="118" rx="33" ry="25" fill="#FFFAF0" opacity="0.9" />
 
-          {/* Cute Cool Girl Bangs / Hair Tuft */}
-          <path d="M54 74 Q68 64 80 74 Q92 64 106 74 Q80 68 54 74 Z" fill="#234E52" />
-          <path d="M50 78 Q46 90 52 98 Q54 86 54 78 Z" fill="#234E52" />
-          <path d="M110 78 Q114 90 108 98 Q106 86 106 78 Z" fill="#234E52" />
+          {/* Cute Cool Girl Hair Tuft / Bangs */}
+          <path d="M60 72 Q80 62 100 72 Q80 66 60 72 Z" fill="#7B341E" />
 
           {/* Chic Retro Shades lowered on bridge */}
           <g transform="translate(50, 86)">
@@ -509,29 +513,29 @@ export const CharacterVector = ({
           </g>
 
           {/* Cute Eyes peeking over shades */}
-          <circle cx="62" cy="84" r="3.5" fill="#1D4044" />
+          <circle cx="62" cy="84" r="3.5" fill="#7B341E" />
           <circle cx="61" cy="82.5" r="1.4" fill="#FFFFFF" />
-          <circle cx="98" cy="84" r="3.5" fill="#1D4044" />
+          <circle cx="98" cy="84" r="3.5" fill="#7B341E" />
           <circle cx="97" cy="82.5" r="1.4" fill="#FFFFFF" />
 
           {/* Cute Rosy Peach Blush */}
-          <ellipse cx="50" cy="104" rx="7" ry="4" fill="#FF85A1" opacity="0.6" />
-          <ellipse cx="110" cy="104" rx="7" ry="4" fill="#FF85A1" opacity="0.6" />
+          <ellipse cx="50" cy="104" rx="7" ry="4" fill="#FF85A1" opacity="0.75" />
+          <ellipse cx="110" cy="104" rx="7" ry="4" fill="#FF85A1" opacity="0.75" />
 
           {/* Cute Cool Smirk */}
-          <path d="M78 108 Q84 114 91 107" stroke="#1D4044" strokeWidth="2.4" strokeLinecap="round" />
+          <path d="M78 108 Q84 114 91 107" stroke="#7B341E" strokeWidth="2.4" strokeLinecap="round" />
 
-          {/* Pink Heart Pin on Headphone */}
+          {/* Pink Heart Pin on Headphone (female indicator) */}
           <g transform="translate(122, 68)">
             <path
               d="M5 2 C5 0.8 4 0 3 0 C2.2 0 1.6 0.6 1.3 1.3 C1 0.6 0.4 0 -0.4 0 C-1.4 0 -2.4 0.8 -2.4 2 C-2.4 3.5 -0.5 5.5 1.3 7 C3.1 5.5 5 3.5 5 2 Z"
-              fill="#FF5E7E"
+              fill="#FF3366"
             />
           </g>
 
-          {/* Feet with retro kicks */}
-          <ellipse cx="62" cy="154" rx="14" ry="9" fill="#285E61" />
-          <ellipse cx="98" cy="154" rx="14" ry="9" fill="#285E61" />
+          {/* Feet */}
+          <ellipse cx="62" cy="154" rx="14" ry="9" fill="#C05621" />
+          <ellipse cx="98" cy="154" rx="14" ry="9" fill="#C05621" />
         </svg>
       );
 
@@ -540,30 +544,30 @@ export const CharacterVector = ({
         <svg viewBox="0 0 160 180" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <radialGradient id="zyzyBody" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stopColor="#FEEBC8" />
-              <stop offset="100%" stopColor="#DD6B20" />
+              <stop offset="0%" stopColor="#E6FFFA" />
+              <stop offset="100%" stopColor="#319795" />
             </radialGradient>
           </defs>
           <ellipse cx="80" cy="165" rx="44" ry="10" fill="rgba(0,0,0,0.12)" />
           {/* Dynamic pointy energetic ears */}
-          <polygon points="42,70 30,25 60,50" fill="#DD6B20" />
-          <polygon points="44,66 36,34 56,52" fill="#FEEBC8" />
-          <polygon points="118,70 130,25 100,50" fill="#DD6B20" />
-          <polygon points="116,66 124,34 104,52" fill="#FEEBC8" />
+          <polygon points="42,70 30,25 60,50" fill="#319795" />
+          <polygon points="44,66 36,34 56,52" fill="#B2F5EA" />
+          <polygon points="118,70 130,25 100,50" fill="#319795" />
+          <polygon points="116,66 124,34 104,52" fill="#B2F5EA" />
 
-          {/* Lightning head tuft */}
+          {/* Golden Lightning head tuft */}
           <polygon points="76,46 84,30 81,42 88,40 78,54" fill="#ECC94B" />
 
           {/* Body */}
           <circle cx="80" cy="103" r="53" fill="url(#zyzyBody)" />
-          <ellipse cx="80" cy="116" rx="32" ry="24" fill="#FFFAF0" opacity="0.9" />
+          <ellipse cx="80" cy="116" rx="32" ry="24" fill="#E6FFFA" opacity="0.9" />
 
           {/* Energetic Wide Eyes */}
-          <circle cx="66" cy="94" r="8" fill="#7B341E" />
+          <circle cx="66" cy="94" r="8" fill="#1D4044" />
           <circle cx="64" cy="91" r="3.2" fill="#FFFFFF" />
           <circle cx="69" cy="97" r="1.6" fill="#FFFFFF" />
 
-          <circle cx="94" cy="94" r="8" fill="#7B341E" />
+          <circle cx="94" cy="94" r="8" fill="#1D4044" />
           <circle cx="92" cy="91" r="3.2" fill="#FFFFFF" />
           <circle cx="97" cy="97" r="1.6" fill="#FFFFFF" />
 
@@ -576,8 +580,8 @@ export const CharacterVector = ({
           <path d="M74 104 L86 104" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
 
           {/* Feet */}
-          <ellipse cx="60" cy="154" rx="14" ry="8" fill="#C05621" />
-          <ellipse cx="100" cy="154" rx="14" ry="8" fill="#C05621" />
+          <ellipse cx="60" cy="154" rx="14" ry="8" fill="#285E61" />
+          <ellipse cx="100" cy="154" rx="14" ry="8" fill="#285E61" />
         </svg>
       );
 
